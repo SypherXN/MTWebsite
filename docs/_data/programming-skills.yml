@@ -1,11 +1,31 @@
-- name: HTML5/CSS3
+- name: Unity
   percentage: 90
+  color: success
+
+- name: Unreal
+  percentage: 70
+  color: success
+
+- name: C#
+  percentage: 85
+  color: danger
+  
+- name: C++
+  percentage: 75
+  color: danger
+  
+- name: Java
+  percentage: 70
   color: danger
 
-- name: Go
-  percentage: 80
-  color:
-
 - name: Python
+  percentage: 70
+  color: danger
+  
+- name: GitHub
+  percentage: 80
+  color: secondary
+  
+- name: Perforce
   percentage: 70
   color: secondary

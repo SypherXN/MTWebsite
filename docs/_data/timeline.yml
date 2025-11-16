@@ -1,11 +1,9 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: M.S. in Computer Science (Game Development), University of Southern California
+  from: 2024
+  to: present
+  description: Pursuing a master's degree in computer science with a specialization in game development at the University of Southern California.
+               During my time here, I have worked on a variety of different projects ranging from a multiplayer spaceship building and dogfighting game to an augmented reality game where players hunt flies.
+               Focused on developing innovative gameplay experiences and mastering industry-standard technologies such as Unity, Unreal, and more.
 
 - title: Software Engineer, Google, UK
   from: 2018
