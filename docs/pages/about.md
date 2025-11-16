@@ -8,7 +8,11 @@ weight: 3
 # **About Me**
 
 Hi I am **{{ site.author.name }}** :wave:,<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I’m currently a master’s student at the University of Southern California, pursuing an M.S. in Computer Science with a specialization in game development. My fascination with technology—and how it shapes our daily lives—began early, and I was already tinkering with basic game development while in elementary school. This passion led me to earn a B.S. in Computer Engineering from the University of California, Santa Barbara, where I gained a solid foundation in both software and hardware.
+
+Now, I’m excited to return to my original love of making games and immerse myself in USC’s game development program. I’m passionate about creating interactive experiences that can bring joy and positive impact to people around the world.
+
+When I’m not coding or playing the latest games, you’ll find me SCUBA diving, snowboarding, skiing, or scouting out new restaurants and food spots.
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
