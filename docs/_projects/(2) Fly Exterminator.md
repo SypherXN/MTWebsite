@@ -29,6 +29,8 @@ Fly Exterminator is a mixed reality game developed for the Meta Quest 3. In this
 
 <p align="center">
 <iframe width="710" height="399" src="https://www.youtube.com/embed/i7GdElLiUTY" title="CTIN532 Fly Exterminator Teaser Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<em>Fly Exterminator Teaser</em>
 </p>
 
 ## Duties
