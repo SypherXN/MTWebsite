@@ -40,6 +40,8 @@ Personal Information Gathering System (P.I.G.S.) was my capstone project at the 
 ## International Telemetry Conference 2023 (ITC)
 Towards the end of our project, we started working on our paper to submit to the International Telemetry Conference. We submitted our implementation of a drone-based information gathering system to the conference and won the Cliff Aggen Student Paper Award. In October 2023, two other students and I, attended the conference in Las Vegas and presented our project to the attendees.
 
+[ITC Student Paper Award](https://www.ce.ucsb.edu/news/all/2023/5-ce-students-itc-student-paper-award)
+
 <p align="center">
   <img src="https://i.imgur.com/TmVsFxr.png" />
   <br>
@@ -55,3 +57,8 @@ Towards the end of our project, we started working on our paper to submit to the
 <p align="center">
 <iframe src="../assets/pigs_slides#toolbar=0" width="960" height="540" style="border:none; max-width: 100%;"></iframe>
 </p>
+
+---
+
+## Other Links
+[Project Website](https://capstone.engineering.ucsb.edu/index.php/projects/pigs)
