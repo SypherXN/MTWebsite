@@ -12,7 +12,7 @@ Virtual Displacement Mapping Techniques was my final project for CSCI 570 (3-D R
 
 ---
 
-[Download PDF](../assets/VDMT_report.pdf)
+[Download Report PDF](../assets/VDMT_report.pdf)
 
 <iframe src="../assets/VDMT_report.pdf#toolbar=0" width="100%" height="1000px" style="border:none;"></iframe>
 

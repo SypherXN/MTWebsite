@@ -7,7 +7,7 @@ weight: 2
 
 # My Resume
 
-[Download PDF](../assets/resume.pdf)
+[Download Resume PDF](../assets/resume.pdf)
 
 <iframe src="../assets/resume.pdf#toolbar=0" width="100%" height="1000px" style="border:none;"></iframe>
 
