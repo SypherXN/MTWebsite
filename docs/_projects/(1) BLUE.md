@@ -7,16 +7,44 @@ description: Spaceship building/combat game created for USC AGP 2025
 
 # B.L.U.E.
 
-B.L.U.E. is a 
+### Role
 
-![preview](https://i.imgur.com/KxyvId1.jpeg)
+QA Lead and Game Developer
 
-The Movies Project is something like **Netflix**, the only difference is that **it's not real**! It doesn't exist! I just created it to demonstrate how the **showcase** page looks like and how you can write whatever you want with full markdown support.
+### Dates
 
-## Search Movies
+May 2025 - Current
 
-![search](https://www.sketchappsources.com/resources/source-image/microsoft-windows-10-virtual-keyboard-diogo-sousa.png)
+### Genre
 
-<p class="text-center">
-{% include elements/button.html link="https://github.com/yousinix/portfolYOU" text="Learn More" %}
+Multiplayer, Action, Sci-fi, Competitive
+
+### Platform
+
+PC
+
+### Description
+
+B.L.U.E. is a multiplayer spaceship building/combat game that is being developed as part of USC AGP 2025. In this game, players will build their ships and then battle one another.
+
+---
+
+<p align="center">
+  <img src="https://i.imgur.com/KxyvId1.jpeg" />
+  <br>
+  <em>In Game View</em>
 </p>
+
+<p align="center">
+  <img src="https://i.imgur.com/2ERIG2i.jpeg" />
+  <br>
+  <em>Cinematic View</em>
+</p>
+
+---
+
+## Duties
+
+- Led a QA team of 3 within a 20+ member student game project, standardizing testing procedures and workflows
+- Created detailed QA reports and collaborated with engineers to resolve bugs affecting user experience and performance
+- Trained QA members and coordinated testing schedules using Perforce, Git, and ClickUp to keep milestones on track
