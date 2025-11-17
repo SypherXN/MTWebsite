@@ -9,4 +9,5 @@ weight: 3
 
 [Download PDF](../assets/resume.pdf)
 
-<iframe src="../assets/resume.pdf#view=FitH" width="100%" height="1000px" style="border:none;"></iframe>
+<iframe src="../assets/resume.pdf#toolbar=0" width="100%" height="1000px" style="border:none;"></iframe>
+
