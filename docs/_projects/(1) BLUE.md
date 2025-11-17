@@ -7,9 +7,11 @@ description: Spaceship building/combat game created for USC AGP 2025
 
 # B.L.U.E.
 
-The Movies Project is something like **Netflix**, the only difference is that **it's not real**! It doesn't exist! I just created it to demonstrate how the **showcase** page looks like and how you can write whatever you want with full markdown support.
+B.L.U.E. is a 
 
-![preview](https://www.sketchappsources.com/resources/source-image/we-were-soldiers-landing-page-dbruggisser.jpg)
+![preview](https://i.imgur.com/KxyvId1.jpeg)
+
+The Movies Project is something like **Netflix**, the only difference is that **it's not real**! It doesn't exist! I just created it to demonstrate how the **showcase** page looks like and how you can write whatever you want with full markdown support.
 
 ## Search Movies
 
