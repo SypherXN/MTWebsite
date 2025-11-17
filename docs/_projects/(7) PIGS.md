@@ -1,8 +1,8 @@
 ---
 name: Personal Information Gathering System (P.I.G.S.)
 tools: [ArduPilot, C++, Python, GitHub]
-image: https://i.imgur.com/ard9cTD.jpeg
-description: Spaceship roguelike FPS game
+image: https://i.imgur.com/Jg2qifY.png
+description: Automated drone group for information gathering around points/persons of interest
 ---
 
 # Personal Information Gathering System

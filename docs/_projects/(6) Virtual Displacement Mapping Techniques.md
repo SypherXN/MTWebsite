@@ -1,8 +1,8 @@
 ---
 name: Virtual Displacement Mapping Techniques
 tools: [Unity, C#, HLSL, GitHub]
-image: https://i.imgur.com/ard9cTD.jpeg
-description: Spaceship roguelike FPS game
+image: https://i.imgur.com/CfEO3X1.png
+description: Testing and examination of virtual displacement mapping techniques
 ---
 
 # Virtual Displacement Mapping Techniques
