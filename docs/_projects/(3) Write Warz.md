@@ -29,11 +29,15 @@ Write Warz is a story-building party game where you and your friends gather acro
 
 [Steam Page](https://store.steampowered.com/app/2477650/Write_Warz)
 
+---
+
 <p align="center">
 <iframe width="1217" height="693" src="https://www.youtube.com/embed/MPTZDSzM90k" title="Write Warz – The Story-Building Party Game | Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 <em>Write Warz Official Trailer</em>
 </p>
+
+---
 
 ## Duties
 
@@ -44,7 +48,11 @@ During my internship at Boltz Entertainment, I focused primarily on the technica
 - Optimized game asset usage and build process, reducing total game size by over 60%
 - Redesigned character abilities to introduce deeper strategic gameplay
 
+---
+
 ## Thing I Worked On
+
+---
 
 ### Bumbly's Rockin' Adventure
 
@@ -59,6 +67,8 @@ During my internship at Boltz Entertainment, I focused primarily on the technica
 - Identified various bugs through playtesting
 - Found fixes for various bugs in various systems
 
+---
+
 ### New Writing Pass (Season Pass)
 <p align="center">
   <img src="https://i.imgur.com/Wi2qHEP.png" />
@@ -71,6 +81,8 @@ During my internship at Boltz Entertainment, I focused primarily on the technica
 - Worked with pre-existing Writing Pass code (utilizing PlayFab) and adapted to work with the new design
 - Communicated with other departments and the studio director to ensure it matches their vision
 
+---
+
 ### Font Debug Build
  <p align="center">
   <img src="https://i.imgur.com/JSjxDJK.jpeg" />
@@ -82,6 +94,8 @@ During my internship at Boltz Entertainment, I focused primarily on the technica
 - Created Font Debug build to allow studio director to test out various font settings
 - Utilized the feedback from the studio director to adjust font settings for the game
 - Identified new fonts that support all characters expected to be used within the game
+
+---
 
 ### Emote System
 #### Contributions
