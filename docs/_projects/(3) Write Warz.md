@@ -27,6 +27,8 @@ PC
 
 Write Warz is a story-building party game where you and your friends gather across themes and worlds to create hilarious stories and captivating adventures!
 
+![Steam Page](https://store.steampowered.com/app/2477650/Write_Warz)
+
 <p align="center">
 <iframe width="1217" height="693" src="https://www.youtube.com/embed/MPTZDSzM90k" title="Write Warz – The Story-Building Party Game | Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
