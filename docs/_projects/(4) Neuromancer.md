@@ -27,11 +27,15 @@ PC
 
 Neuromancer is an action-adventure game where the player uses the power of Neuromancy to control the minds of enemies. The player themselves are quite weak and cannot do much themselves. Instead they must utilize the enemies to fight enemies/bosses and solve puzzles.
 
+---
+
 <p align="center">
 <iframe width="710" height="399" src="https://www.youtube.com/embed/p-moSojMYow" title="Neuromancer Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 <em>Neuromancer Teaser</em>
 </p>
+
+---
 
 ## Duties
 

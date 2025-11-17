@@ -27,11 +27,15 @@ Meta Quest 3
 
 Fly Exterminator is a mixed reality game developed for the Meta Quest 3. In this game, players will go through fly exterminator training. Once they finish their training they will compete with players all around the world to truly become the best.
 
+---
+
 <p align="center">
 <iframe width="710" height="399" src="https://www.youtube.com/embed/i7GdElLiUTY" title="CTIN532 Fly Exterminator Teaser Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 <em>Fly Exterminator Teaser</em>
 </p>
+
+---
 
 ## Duties
 
@@ -47,7 +51,11 @@ Fly Exterminator is a mixed reality game developed for the Meta Quest 3. In this
 
 - Design the user interface that fits the genre of the game
 
+---
+
 ## Production Timeline
+
+---
 
 ### Ideation (January - February 2025)
 In the ideation phase we discussed a variety of different ideas for the game. Between the two of us, we both wanted to work on a virtual reality game that is more focused on a fun experience rather than a narrative game. I am a big fan of games that take a somewhat random experience from our lives and turns them into games. This combined with my partner’s memory of killing flies at home throughout summers, we came up with the idea for Fly Exterminator.
@@ -72,6 +80,8 @@ In the ideation phase we discussed a variety of different ideas for the game. Be
 
 Throughout the ideation phase we worked on making various prototypes to test if our idea would be feasible. This included testing various game mechanics: virtual objects interacting with real objects in the room, sound spatialization, and interactions between the player and virtual objects.
 
+---
+
 ### Pre-production (February - March 2025)
 In the pre-production phase we were focused on creating a playable vertical slice. This includes a main menu to navigate through different game modes, two different game modes, and a results screen to return back to the main menu. With these three sequences we have a completed game loop.
 
@@ -80,6 +90,8 @@ In the pre-production phase we were focused on creating a playable vertical slic
 <br>
 <em>Playthrough of Vertical Slice</em>
 </p>
+
+---
 
 ### Production (March - April 2025)
 After creating the vertical slice, we entered the production phase of development. This would consist of fully developing each of the game’s core mechanics while taking feedback from play testers. First we had the Alpha milestone, where our main goal was to reach feature completeness which included all of our core mechanics of the game such as killing flies, various user interfaces, and tracking metrics of players. Then we had the Beta milestone, where the goal was to have all features and sequences of the game completed. These sequences mainly consisted of the various game modes as well as their respective tutorials.
@@ -95,6 +107,8 @@ After creating the vertical slice, we entered the production phase of developmen
 <br>
 <em>Playthrough of Beta Milestone</em>
 </p>
+
+---
 
 ### Post-production (April - May 2025)
 Entering the post-production phase meant that we were no longer focusing on the development of the core mechanics of the game as they were finished in the production phase. Throughout this phase, we almost all of our time to polishing the user experience of the game. This was done through redesigns of the various user interfaces as well as integrating music, sound effects, and visual effects. As we reached the final state of the game, I also put together a quick teaser for Fly Exterminator that showcases the core of the game.

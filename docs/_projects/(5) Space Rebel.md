@@ -27,11 +27,15 @@ PC
 
 Space Rebel is a first person shooter game where the player pilots a spaceship to take on various enemies. As they defeat more enemies they gather scrap and can purchase upgrades for their spaceship. The player needs to continue getting stronger to make sure that they are ready for the boss fights.
 
+---
+
 <p align="center">
 <iframe width="710" height="533" src="https://www.youtube.com/embed/Az7e0diN2pE" title="Space Rebel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 <em>Space Rebel Showcase</em>
 </p>
+
+---
 
 ## Duties
 
