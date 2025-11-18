@@ -30,7 +30,7 @@ Space Rebel is a first person shooter game where the player pilots a spaceship t
 ---
 
 <p align="center">
-<iframe width="710" height="533" src="https://www.youtube.com/embed/Az7e0diN2pE" title="Space Rebel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="710" height="399" src="https://www.youtube.com/embed/Az7e0diN2pE" title="Space Rebel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 <em>Space Rebel Showcase</em>
 </p>

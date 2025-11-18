@@ -32,7 +32,7 @@ Write Warz is a story-building party game where you and your friends gather acro
 ---
 
 <p align="center">
-<iframe width="710" height="533" src="https://www.youtube.com/embed/MPTZDSzM90k" title="Write Warz – The Story-Building Party Game | Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="710" height="399" src="https://www.youtube.com/embed/MPTZDSzM90k" title="Write Warz – The Story-Building Party Game | Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 <em>Write Warz Official Trailer</em>
 </p>
@@ -57,7 +57,7 @@ During my internship at Boltz Entertainment, I focused primarily on the technica
 ### Bumbly's Rockin' Adventure
 
 <p align="center">
-<iframe width="710" height="533" src="https://www.youtube.com/embed/bu3nm9lVP20" title="Write Warz| Limited Time Mode Premier Trailer | Bumbly&#39;s Rockin&#39; Adventure   @Boltz Entertainment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="710" height="399" src="https://www.youtube.com/embed/bu3nm9lVP20" title="Write Warz| Limited Time Mode Premier Trailer | Bumbly&#39;s Rockin&#39; Adventure   @Boltz Entertainment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 <em>Bumbly's Rockin' Adventure Trailer</em>
 </p>

@@ -13,7 +13,7 @@ Personal Information Gathering System (P.I.G.S.) was my capstone project at the 
 ---
 
 <p align="center">
-<iframe width="710" height="533" src="https://www.youtube.com/embed/dZNtxEBDu8k" title="UCSB CE Capstone: P.I.G.S Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="710" height="399" src="https://www.youtube.com/embed/dZNtxEBDu8k" title="UCSB CE Capstone: P.I.G.S Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 <em>P.I.G.S. Demo</em>
 </p>
