@@ -1,5 +1,6 @@
 ---
 name: Minecart Mayhem
+category: Game Design
 image: https://i.imgur.com/Mgl3DF9.png
 description: Competitive card game where players battle to be the last player alive
 ---

@@ -1,5 +1,6 @@
 ---
 name: Order Up!
+category: Game Design
 tools: [Canva]
 image: https://i.imgur.com/J8JLJ5e.png
 description: Spoons with a cooking twist

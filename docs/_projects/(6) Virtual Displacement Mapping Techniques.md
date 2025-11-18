@@ -1,5 +1,6 @@
 ---
 name: Virtual Displacement Mapping Techniques
+category: Computer Science
 tools: [Unity, C#, HLSL, GitHub]
 image: https://i.imgur.com/CfEO3X1.png
 description: Testing and examination of virtual displacement mapping techniques

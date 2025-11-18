@@ -1,5 +1,6 @@
 ---
 name: Alchemical Antics
+category: Game Design
 image: https://i.imgur.com/tJDEvQW.png
 description: Party game where players curse one another with funny challenges
 ---

@@ -1,5 +1,6 @@
 ---
 name: Neuromancer
+category: Game Development
 tools: [Unity, C#, GitHub]
 image: https://i.imgur.com/BG4zyMG.jpeg
 description: Action RPG game centered on mind control mechanic

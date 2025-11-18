@@ -1,5 +1,6 @@
 ---
 name: Fly Exterminator
+category: Game Development
 tools: [Unity, C#, Perforce, MetaXR]
 image: https://i.imgur.com/yjnhu5e.png
 description: Augmented Reality game where players compete to kill the most flies in various game modes

@@ -1,5 +1,6 @@
 ---
 name: Write Warz
+category: Game Development
 tools: [Unity, C#, GitHub, Netcode]
 image: https://i.imgur.com/Y88gkUz.png
 description: Multiplayer storytelling party game

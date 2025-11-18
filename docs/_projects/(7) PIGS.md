@@ -1,5 +1,6 @@
 ---
 name: Personal Information Gathering System (P.I.G.S.)
+category: Computer Science
 tools: [ArduPilot, C++, Python, GitHub]
 image: https://i.imgur.com/Jg2qifY.png
 description: Automated drone group for information gathering around points/persons of interest

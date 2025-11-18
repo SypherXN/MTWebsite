@@ -1,5 +1,6 @@
 ---
 name: B.L.U.E.
+category: Game Development
 tools: [Unreal Engine 5, C++, Perforce]
 image: https://i.imgur.com/KxyvId1.jpeg
 description: Spaceship building/combat game created for USC AGP 2025

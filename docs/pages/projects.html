@@ -1,9 +1,12 @@
----
-layout: default
-title: Projects
-permalink: /projects/
-weight: 1
-remote_projects:
----
+{% assign grouped_projects = site.projects | group_by: "category" %}
 
-{% include projects/index.html %}
+{% for group in grouped_projects %}
+  <h2>{{ group.name }}</h2>
+  <ul>
+    {% for project in group.items %}
+      <li>
+        <a href="{{ project.external_url }}">{{ project.name }}</a>: {{ project.description }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
