@@ -37,42 +37,39 @@
   <!-- Local Projects Grouped by Category -->
 {% assign grouped_projects = site.projects | group_by: "category" %}
 <div class="category-list">
-{% for group in grouped_projects %}
-  <div class="category-row" style="display: flex; align-items: flex-start; margin-bottom: 72px;">
-    <div class="category-label" style="min-width:240px; display: flex; align-items: center;">
-      <h2 style="
-        font-size:2rem;
-        white-space: nowrap;
-        margin-right: 28px;
-        padding-right: 16px;
-        border-right: 2px solid #fff;
-        margin-bottom: 0;
-        line-height: 1;
-      ">{{ group.name }}</h2>
+  {% for group in grouped_projects %}
+    <div class="category-row" style="display: flex; align-items: flex-start; margin-bottom: 64px;">
+      <!-- Category label far left -->
+      <div class="category-label" style="flex: 0 0 260px; display: flex; align-items: center; height: 100%;">
+        <h2 style="font-size:2rem; white-space:nowrap; margin-right:32px; border-right:2px solid #fff; padding-right:18px; margin-bottom:0; line-height: 1;">
+          {{ group.name }}
+        </h2>
+      </div>
+      <!-- Cards on the right, wrapping horizontally -->
+      <div class="cards" style="display: flex; flex-wrap: wrap; gap: 32px;">
+        {% for project in group.items %}
+          <div style="width: 19rem;">
+            {%- assign project_type  = "local" -%}
+            {%- assign project_id    = project.name | slugify -%}
+            {%- assign project_img   = project.image -%}
+            {%- assign project_name  = project.name -%}
+            {%- assign project_desc  = project.description -%}
+            {%- assign project_tools = project.tools -%}
+            {%- if project.external_url -%}
+              {%- assign project_url = project.external_url -%}
+              {%- assign external    = true -%}
+            {%- else -%}
+              {%- assign project_url = project.url | relative_url -%}
+              {%- assign external    = false -%}
+            {%- endif -%}
+            {% include projects/project-card.html %}
+          </div>
+        {% endfor %}
+      </div>
     </div>
-    <div class="cards" style="display: flex; flex-wrap: wrap; gap: 32px;">
-      {% for project in group.items %}
-        <div style="width: 19rem;">
-          {%- assign project_type  = "local" -%}
-          {%- assign project_id    = project.name | slugify -%}
-          {%- assign project_img   = project.image -%}
-          {%- assign project_name  = project.name -%}
-          {%- assign project_desc  = project.description -%}
-          {%- assign project_tools = project.tools -%}
-          {%- if project.external_url -%}
-            {%- assign project_url = project.external_url -%}
-            {%- assign external    = true -%}
-          {%- else -%}
-            {%- assign project_url = project.url | relative_url -%}
-            {%- assign external    = false -%}
-          {%- endif -%}
-          {% include projects/project-card.html %}
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-{% endfor %}
+  {% endfor %}
 </div>
+
 
 
 </div>
