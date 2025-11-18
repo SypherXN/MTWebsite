@@ -6,11 +6,13 @@ weight: 1
 remote_projects:
 ---
 
-{% include projects/index.html %}
+<!-- {% include projects/index.html %} -->
 
-<!--
+
 
 <h1 class="mb-5 mt-4 text-center">Game Development</h1>
+
+<div class="card-columns m-3 mt-5">
 
 {% assign allowed_categories = "Game Development" | split: "," %}
 {% for project in site.projects %}
@@ -32,7 +34,11 @@ remote_projects:
     {% endif %}
 {% endfor %}
 
+</div>
+
 <h1 class="mb-5 mt-4 text-center">Game Design</h1>
+
+<div class="card-columns m-3 mt-5"></div>
 
 {% assign allowed_categories = "Game Design" | split: "," %}
 {% for project in site.projects %}
@@ -54,7 +60,11 @@ remote_projects:
     {% endif %}
 {% endfor %}
 
+</div>
+
 <h1 class="mb-5 mt-4 text-center">Computer Science</h1>
+
+<div class="card-columns m-3 mt-5"></div>
 
 {% assign allowed_categories = "Computer Science" | split: "," %}
 {% for project in site.projects %}
@@ -76,4 +86,4 @@ remote_projects:
     {% endif %}
 {% endfor %}
 
--->
+</div>
