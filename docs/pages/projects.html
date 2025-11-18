@@ -11,13 +11,10 @@ weight: 1
 
 {% for group in grouped_projects %}
   <h2>{{ group.name }}</h2>
-  <ul>
+  <div class="project-category-group">
     {% for project in group.items %}
-      <li>
-        <a href="{{ project.external_url }}">{{ project.name }}</a>
-        <p>{{ project.description }}</p>
-        <!-- Optionally display tools, image, etc. -->
-      </li>
+      <!-- Replace with your previous formatting or include -->
+      {% include projects/card.html project=project %}
     {% endfor %}
-  </ul>
+  </div>
 {% endfor %}
