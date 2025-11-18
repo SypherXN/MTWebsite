@@ -35,10 +35,9 @@
   {% endfor %}
 
   <!-- Local Projects Grouped by Category -->
-  <div class="card-columns m-3 mt-5">
-	{% assign allowed_categories = "Game Development" | split: "," %}
+	{% assign allowed_categories = "Game Development,Game Design,Computer Science" | split: "," %}
 	{% for project in site.projects %}
-	  {% if allowed_categories contains project.category %}
+		{% if allowed_categories contains project.category %}
 		{% assign project_type = "local" %}
 		{% assign project_id = project.name | slugify %}
 		{% assign project_img = project.image %}
@@ -46,14 +45,14 @@
 		{% assign project_desc = project.description %}
 		{% assign project_tools = project.tools %}
 		{% if project.external_url %}
-		  {% assign project_url = project.external_url %}
-		  {% assign external = true %}
+			{% assign project_url = project.external_url %}
+			{% assign external = true %}
 		{% else %}
-		  {% assign project_url = project.url | relative_url %}
-		  {% assign external = false %}
+			{% assign project_url = project.url | relative_url %}
+			{% assign external = false %}
 		{% endif %}
 		{% include projects/project-card.html %}
-	  {% endif %}
+		{% endif %}
 	{% endfor %}
 
 </div>
