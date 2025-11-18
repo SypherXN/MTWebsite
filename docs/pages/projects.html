@@ -3,9 +3,8 @@ layout: default
 title: Projects
 permalink: /projects/
 weight: 1
+remote_projects:
 ---
-
-<h1>Projects</h1>
 
 {% assign grouped_projects = site.projects | group_by: "category" %}
 
@@ -13,7 +12,8 @@ weight: 1
   <h2>{{ group.name }}</h2>
   <div class="project-grid">
     {% for project in group.items %}
-      {% include projects/card.html project=project %}
+      {% include projects/index.html project=project %}
+      <!-- or use the exact markup that generates each card in your old template -->
     {% endfor %}
   </div>
 {% endfor %}
