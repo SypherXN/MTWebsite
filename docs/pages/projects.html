@@ -6,4 +6,18 @@ weight: 1
 remote_projects:
 ---
 
-{% include projects/index.html %}
+{% assign grouped_projects = site.projects | group_by: "category" %}
+{% for category in grouped_projects %}
+  <h2>{{ category.name }}</h2>
+  <div class="category-projects">
+    {% for project in category.items %}
+      <!-- Project card or details here -->
+      <div class="project-card">
+        <h3>{{ project.name }}</h3>
+        <img src="{{ project.image }}">
+        <p>{{ project.description }}</p>
+        <!-- And so on -->
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}
