@@ -1,3 +1,12 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+weight: 1
+---
+
+<h1>Projects</h1>
+
 {% assign grouped_projects = site.projects | group_by: "category" %}
 
 {% for group in grouped_projects %}
@@ -5,7 +14,9 @@
   <ul>
     {% for project in group.items %}
       <li>
-        <a href="{{ project.external_url }}">{{ project.name }}</a>: {{ project.description }}
+        <a href="{{ project.external_url }}">{{ project.name }}</a>
+        <p>{{ project.description }}</p>
+        <!-- Optionally display tools, image, etc. -->
       </li>
     {% endfor %}
   </ul>
