@@ -34,26 +34,29 @@
 
   {% endfor %}
 
-  <!-- Local Projects -->
-  {% for project in site.projects %}
+  <!-- Local Projects Grouped by Category -->
+{% assign grouped_projects = site.projects | group_by: "category" %}
 
-    {%- assign project_type  = "local" -%}
-    {%- assign project_id    = project.name | slugify -%}
-    {%- assign project_img   = project.image -%}
-    {%- assign project_name  = project.name -%}
-    {%- assign project_desc  = project.description -%}
-    {%- assign project_tools = project.tools -%}
-
-    {%- if project.external_url -%}
-      {%- assign project_url = project.external_url -%}
-      {%- assign external    = true -%}
-    {%- else -%}
-      {%- assign project_url = project.url | relative_url -%}
-      {%- assign external    = false -%}
-    {%- endif -%}
-
-    {% include projects/project-card.html %}
-
-  {% endfor %}
+{% for group in grouped_projects %}
+  <h2 class="mt-4 mb-2">{{ group.name }}</h2>
+  <div class="card-columns">
+    {% for project in group.items %}
+      {%- assign project_type  = "local" -%}
+      {%- assign project_id    = project.name | slugify -%}
+      {%- assign project_img   = project.image -%}
+      {%- assign project_name  = project.name -%}
+      {%- assign project_desc  = project.description -%}
+      {%- assign project_tools = project.tools -%}
+      {%- if project.external_url -%}
+        {%- assign project_url = project.external_url -%}
+        {%- assign external    = true -%}
+      {%- else -%}
+        {%- assign project_url = project.url | relative_url -%}
+        {%- assign external    = false -%}
+      {%- endif -%}
+      {% include projects/project-card.html %}
+    {% endfor %}
+  </div>
+{% endfor %}
 
 </div>
