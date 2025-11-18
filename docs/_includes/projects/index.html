@@ -36,7 +36,7 @@
 
   <!-- Local Projects Grouped by Category -->
   <div class="card-columns m-3 mt-5">
-	{% assign allowed_categories = "Game Development,Game Design,Computer Science" | split: "," %}
+	{% assign allowed_categories = "Game Development" | split: "," %}
 	{% for project in site.projects %}
 	  {% if allowed_categories contains project.category %}
 		{% assign project_type = "local" %}
