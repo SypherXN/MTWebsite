@@ -35,7 +35,7 @@
   {% endfor %}
 
   <!-- Local Projects Grouped by Category -->
-	{% assign allowed_categories = "Game Development,Game Design,Computer Science" | split: "," %}
+	{% assign allowed_categories = "Game Development" | split: "," %}
 	{% for project in site.projects %}
 		{% if allowed_categories contains project.category %}
 		{% assign project_type = "local" %}
