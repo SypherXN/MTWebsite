@@ -1,4 +1,3 @@
-DEBUG TEST OUTPUT
 
 <div class="card-columns m-3 mt-5">
 
@@ -38,26 +37,12 @@ DEBUG TEST OUTPUT
   <!-- Local Projects Grouped by Category -->
   {% assign grouped_projects = site.projects | group_by: "category" %}
   {% for category in grouped_projects %}
-	<h2 class="mt-4 mb-3">{{ category.name }}</h2>
-	<div class="card-columns m-3 mt-2">
+	<h2>{{ category.name }}</h2>
+	<div class="card-columns">
 	  {% for project in category.items %}
-		{%- assign project_type = "local" -%}
-		{%- assign project_id = project.name | slugify -%}
-		{%- assign project_img = project.image -%}
-		{%- assign project_name = project.name -%}
-		{%- assign project_desc = project.description -%}
-		{%- assign project_tools = project.tools -%}
-		{%- if project.external_url -%}
-		  {%- assign project_url = project.external_url -%}
-		  {%- assign external = true -%}
-		{%- else -%}
-		  {%- assign project_url = project.url | relative_url -%}
-		  {%- assign external = false -%}
-		{%- endif -%}
-		{% include projects/project-card.html %}
+		{% include projects/project-card.html project=project %}
 	  {% endfor %}
 	</div>
-  {% endfor %}
-  
+  {% endfor %}  
 
 </div>
