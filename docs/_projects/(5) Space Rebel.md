@@ -1,5 +1,5 @@
 ---
-name: Neuromancer
+name: Space Rebel
 category: Game Development
 tools: [Unity, C#, GitHub]
 image: https://i.imgur.com/ard9cTD.jpeg
