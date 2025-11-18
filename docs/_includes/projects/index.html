@@ -38,7 +38,7 @@
 {% assign grouped_projects = site.projects | group_by: "category" %}
 <div class="category-list" style="width:100%;">
   {% for group in grouped_projects %}
-    <!-- Category name: flush left, horizontal divider -->
+    <!-- Category header -->
     <h2 class="category-label" style="
       font-size:2rem;
       margin-bottom:18px;
@@ -49,17 +49,16 @@
     ">
       {{ group.name }}
     </h2>
-    <!-- Cards: laid out left to right, wrapping if needed -->
+    <!-- Cards: true grid, lays out left to right -->
     <div class="cards" style="
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
       gap: 32px;
       margin-bottom: 60px;
-      justify-content:flex-start;
-      width:100%;
+      width: 100%;
     ">
       {% for project in group.items %}
-        <div style="width:19rem;">
+        <div>
           {%- assign project_type  = "local" -%}
           {%- assign project_id    = project.name | slugify -%}
           {%- assign project_img   = project.image -%}
