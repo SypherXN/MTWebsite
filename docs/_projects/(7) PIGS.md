@@ -50,12 +50,12 @@ Towards the end of our project, we started working on our paper to submit to the
 
 [Download Report PDF](../assets/pigs_paper.pdf)
 
-<iframe src="../assets/pigs_paper#toolbar=0" width="100%" height="1000px" style="border:none;"></iframe>
+<iframe src="../assets/pigs_paper.pdf#toolbar=0" width="100%" height="1000px" style="border:none;"></iframe>
 
 [Download Slides PDF](../assets/pigs_slides.pdf)
 
 <p align="center">
-<iframe src="../assets/pigs_slides#toolbar=0" width="960" height="540" style="border:none; max-width: 100%;"></iframe>
+<iframe src="../assets/pigs_slides.pdf#toolbar=0" width="960" height="540" style="border:none; max-width: 100%;"></iframe>
 </p>
 
 ---
