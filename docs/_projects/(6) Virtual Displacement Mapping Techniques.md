@@ -8,6 +8,8 @@ description: Testing and examination of virtual displacement mapping techniques
 
 # Virtual Displacement Mapping Techniques
 
+---
+
 ### Description
 Virtual Displacement Mapping Techniques was my final project for CSCI 570 (3-D Rendering and Graphics). I worked alongside three other students to compare the performance of various virtual displacement mapping techniques against true displacement mapping.
 

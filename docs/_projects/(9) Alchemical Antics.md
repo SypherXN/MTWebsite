@@ -7,6 +7,8 @@ description: Party game where players curse one another with funny challenges
 
 # Alchemical Antics
 
+---
+
 ### Description
 
 Alchemical Antics is a party game where players brew different potions and use them on other players to test out their various effects. Players move around the board to gather different resources and need to trade with other alchemists to gather the materials needed to brew potions.

@@ -8,6 +8,8 @@ description: Multiplayer storytelling party game
 
 # Write Warz
 
+---
+
 ### Role
 
 Game Development Intern

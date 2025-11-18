@@ -8,6 +8,8 @@ description: Automated drone group for information gathering around points/perso
 
 # Personal Information Gathering System
 
+---
+
 ### Description
 Personal Information Gathering System (P.I.G.S.) was my capstone project at the University of California, Santa Barbara. I worked alongside four other senior computer engineering students on a project sponsored by Aerovironment. We were tasked with creating a drone system that could gather information around the user for their safety.
 

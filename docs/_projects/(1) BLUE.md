@@ -8,6 +8,8 @@ description: Spaceship building/combat game created for USC AGP 2025
 
 # B.L.U.E.
 
+---
+
 ### Role
 
 QA Lead and Game Developer

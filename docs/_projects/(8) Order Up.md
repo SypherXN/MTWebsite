@@ -8,6 +8,8 @@ description: Spoons with a cooking twist
 
 # Order Up!
 
+---
+
 ### Description
 
 Order Up! is a game where players compete to complete the most orders before the order deck runs out. Each player passes ingredient cards around in order to match orders in the middle.

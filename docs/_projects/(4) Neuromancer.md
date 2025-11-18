@@ -8,6 +8,8 @@ description: Action RPG game centered on mind control mechanic
 
 # Neuromancer
 
+---
+
 ### Role
 
 Enemy AI Lead Developer and Game Designer

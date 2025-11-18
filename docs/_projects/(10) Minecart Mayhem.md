@@ -7,6 +7,8 @@ description: Competitive card game where players battle to be the last player al
 
 # Minecart Mayhem
 
+---
+
 ### Description
 
 Minecart Mayhem is a game where players are trying to survive in their minecart by placing rails in front of them while the cave is collapsing behind them. In order to be the last player alive, they can choose between keeping themselves safe and sabotaging opposing players.
