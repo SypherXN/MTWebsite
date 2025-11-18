@@ -3,18 +3,7 @@ layout: default
 title: Projects
 permalink: /projects/
 weight: 1
+remote_projects:
 ---
 
-<h1>Projects</h1>
-
-{% assign grouped_projects = site.projects | group_by: "category" %}
-
-{% for group in grouped_projects %}
-  <h2>{{ group.name }}</h2>
-  <div class="project-category-group">
-    {% for project in group.items %}
-      <!-- Replace with your previous formatting or include -->
-      {% include projects/card.html project=project %}
-    {% endfor %}
-  </div>
-{% endfor %}
+{% include projects/index.html %}
