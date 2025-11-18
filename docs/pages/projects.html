@@ -6,14 +6,4 @@ weight: 1
 remote_projects:
 ---
 
-{% assign grouped_projects = site.projects | group_by: "category" %}
-
-{% for group in grouped_projects %}
-  <h2>{{ group.name }}</h2>
-  <div class="project-grid">
-    {% for project in group.items %}
-      {% include projects/index.html project=project %}
-      <!-- or use the exact markup that generates each card in your old template -->
-    {% endfor %}
-  </div>
-{% endfor %}
+{% include projects/index.html %}
