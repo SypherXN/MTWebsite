@@ -42,17 +42,19 @@ Typomancers is a cooperative typing rougelike games developed for play in browse
 
 ## Duties
 
-- Develop a game experience that can be completed in 5-10 minutes for CTIN 532L at USC
+- Develop a game experience that can be played on browsers using WebGL for CTIN 526 at USC
 
-- Work alongside one other student to develop a mixed reality game for the Meta Quest 3
+- Lead a team of 5 engineers through development of a cooperative typing rouge-like game
 
-- Utilize Perforce for version control to streamline code organization
+- Utilize GitHub for version control to streamline code organization
 
-- Replicate industry production schedules including prototyping, pre-production, production, and post-production
+- Integrate Unity Multiplayer to allow for a seamless multiplayer experience for players
 
-- Create a realistic experience where players hunt virtual flies in their room
+- Implement Unity Analytics to identify player behavior issues and iteratively optimized gameplay
 
-- Design the user interface that fits the genre of the game
+- Create a unique cooperative rougelike game designed around typing as the core mechanic
+
+- Design a scalable network architecture that supports seamless feature expansion while minimizing synchronization issues
 
 ---
 
