@@ -35,7 +35,7 @@ Typomancers is a cooperative typing rougelike games developed for play in browse
 <p align="center">
 <iframe width="710" height="399" src="https://drive.google.com/file/d/1KS4wDSM2x-nFT9w2M6Y5CrGRB7qwoUzW/view?usp=sharing" title="Typomancers Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
-<em>Fly Exterminator Teaser</em>
+<em>Typomancers Teaser</em>
 </p>
 
 ---
