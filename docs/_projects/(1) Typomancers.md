@@ -62,64 +62,126 @@ Typomancers is a cooperative typing rougelike games developed for play in browse
 
 ---
 
-### Ideation (January - February 2025)
-In the ideation phase we discussed a variety of different ideas for the game. Between the two of us, we both wanted to work on a virtual reality game that is more focused on a fun experience rather than a narrative game. I am a big fan of games that take a somewhat random experience from our lives and turns them into games. This combined with my partner’s memory of killing flies at home throughout summers, we came up with the idea for Fly Exterminator.
+### Alpha
+For the alpha, we spent a lot of time establishing the core mechanics of the game and designing game. After our design of the game we established the three core systems that needed to be implemented for the alpha. These were Unity multiplayer networking, typing (typing field, curses/buffs, and accuracy/wpm calculations), and enemy/player interaction.
 
 <p align="center">
-  <img src="https://i.imgur.com/zFf559Y.png" />
+  <img src="https://i.imgur.com/UXIOkpH.png" />
   <br>
-  <em>Ball represents a fly and is landing on walls</em>
+  <em>Basic Unity Multiplayer Networking</em>
 </p>
 
 <p align="center">
-  <img src="https://i.imgur.com/7DumMpS.png" />
+  <img src="https://i.imgur.com/UdTQC1U.png" />
   <br>
-  <em>Testing MetaXR sound spatialization feature in a virtual environment</em>
-</p>
-
-<p align="center">
-  <img src="https://i.imgur.com/tMcaEbx.png" />
-  <br>
-  <em>Testing interactions between virtual objects and real world objects</em>
-</p>
-
-Throughout the ideation phase we worked on making various prototypes to test if our idea would be feasible. This included testing various game mechanics: virtual objects interacting with real objects in the room, sound spatialization, and interactions between the player and virtual objects.
-
----
-
-### Pre-production (February - March 2025)
-In the pre-production phase we were focused on creating a playable vertical slice. This includes a main menu to navigate through different game modes, two different game modes, and a results screen to return back to the main menu. With these three sequences we have a completed game loop.
-
-<p align="center">
-<iframe width="710" height="399" src="https://www.youtube.com/embed/y1WiJny65g8" title="Fly Exterminator Vertical Slice Demo (CTIN532)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<br>
-<em>Playthrough of Vertical Slice</em>
+  <em>Early Implementation of Typing Elements and Enemy/Player</em>
 </p>
 
 ---
 
-### Production (March - April 2025)
-After creating the vertical slice, we entered the production phase of development. This would consist of fully developing each of the game’s core mechanics while taking feedback from play testers. First we had the Alpha milestone, where our main goal was to reach feature completeness which included all of our core mechanics of the game such as killing flies, various user interfaces, and tracking metrics of players. Then we had the Beta milestone, where the goal was to have all features and sequences of the game completed. These sequences mainly consisted of the various game modes as well as their respective tutorials.
+### Beta
+With all of the core systems established in the Alpha, we now were more focused on adding supplemental features and making adjustments to improve the players' experience.
 
 <p align="center">
-<iframe width="710" height="399" src="https://www.youtube.com/embed/Dw75sX5Mkr8" title="Fly Exterminator Alpha Demo (CTIN532)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<br>
-<em>Playthrough of Alpha Milestone</em>
+  <img src="https://i.imgur.com/pdRZBrN.png" />
+  <br>
+  <em>Early Class Selection Screen</em>
+</p>
+
+The main supplemental feature we implemented was the class system. We wanted to allow for more playstyles in the game especially when it comes to playing with others. The addition of classes would allow players to specialize in different parts of the game such as attacking, supporting, and healing.
+
+<p align="center">
+  <img src="https://i.imgur.com/6Zmt6je.png" />
+  <br>
+  <em>Beta Lobby Screen</em>
+</p>
+
+One of the main feedback we got from our Alpha milestone was that the joining process of the game was unclear. So we created a new UI that would make the joining process easier to understand by taking inspiration from other games that players are more used to.
+
+<p align="center">
+  <img src="https://i.imgur.com/3mZDmIF.png" />
+  <br>
+  <em>New Typing Field</em>
+</p>
+
+Another piece of feedback we received was that it wasn't clear that players needed to type the prompt. After a lot of discussion we decided to take inspiration from other typing games like Typeracer and MonkeyType. In these games, as you type it goes over the prompt and errors are highlighted red. So we implemented this new typing field to make it more familiar to players with the goal of making it clearer.
+
+<p align="center">
+  <img src="https://i.imgur.com/ZigQ8HM.png" />
+  <br>
+  <em>Tab Screen</em>
+</p>
+
+A lot of players also were unsure of what their curses/buffs were as they played through the game as there was no way to view it. To solve this we added a tab screen that allowed for players to view their curse/buff status throughout the game. We decided to also add the class information here so players could easily view it.
+
+<p align="center">
+  <img src="https://i.imgur.com/TX3uzS3.png" />
+  <br>
+  <em>Tutorialization</em>
+</p>
+
+Because our Alpha milestone was solely focused on implementing the core systems of the game, we didn't have any tutorialization which made it difficult for players to understand the game. So we designed a new tutorial system to teach players the basics of the game. This consisted of the prompts in the first level telling the player important information and then sparkle effects being added to different game elements to draw the player's attention.
+
+#### Analytics
+Another requirement for our Beta milestone was the implementation of analytics pipeline. We decided to use Unity Analytics to gather key statistics from players. I was in charge of establishing this pipeline and interpreting this data to make future changes.
+
+<p align="center">
+  <img src="https://i.imgur.com/5Ik4CqK.png" />
+  <br>
+  <em>Ability Usage Statistics</em>
 </p>
 
 <p align="center">
-<iframe width="710" height="399" src="https://www.youtube.com/embed/KNtHEwWo9Gk" title="Fly Exterminator Beta Demo (CTIN532)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<br>
-<em>Playthrough of Beta Milestone</em>
+  <img src="https://i.imgur.com/0EYQmIJ.png" />
+  <br>
+  <em>Player Statistics</em>
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/j1XXqwq.png" />
+  <br>
+  <em>Curse/Buff Statistics</em>
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/N6FFY8J.png" />
+  <br>
+  <em>Difficulty Statistics</em>
 </p>
 
 ---
 
-### Post-production (April - May 2025)
-Entering the post-production phase meant that we were no longer focusing on the development of the core mechanics of the game as they were finished in the production phase. Throughout this phase, we almost all of our time to polishing the user experience of the game. This was done through redesigns of the various user interfaces as well as integrating music, sound effects, and visual effects. As we reached the final state of the game, I also put together a quick teaser for Fly Exterminator that showcases the core of the game.
+### Gold
+Part of the restrictions we were given as part of the class was that we were not allowed to utilize any external assets (specifically art and audio) before the Gold milestone. So for the gold milestone we focused a lot on adding art and audio assets to make the game more immersive for players.
 
 <p align="center">
-<iframe width="710" height="399" src="https://www.youtube.com/embed/i7GdElLiUTY" title="CTIN532 Fly Exterminator Teaser Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <img src="https://i.imgur.com/SFHxOaU.png" />
+  <br>
+  <em>New Lobby Screen</em>
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/abI85KG.png" />
+  <br>
+  <em>New Battle Screen</em>
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/HfupRCt.png" />
+  <br>
+  <em>New Tab Screen</em>
+</p>
+
+We also created a presentation to showcase the gold milestone of Typomancers to our class which included a video teaser we edited to showcase the core elements of Typomancers.
+
+[Download Slides PDF](../assets/typomancers_slides.pdf)
+
+<p align="center">
+<iframe src="../assets/typomancers_slides.pdf#toolbar=0" width="960" height="540" style="border:none; max-width: 100%;"></iframe>
+</p>
+
+<p align="center">
+<iframe width="710" height="399" src="https://www.youtube.com/embed/HHaYRU80L9o" title="Typomancers Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
-<em>Fly Exterminator Teaser</em>
+<em>Typomancers Teaser</em>
 </p>
