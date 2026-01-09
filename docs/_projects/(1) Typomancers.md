@@ -26,6 +26,10 @@ Cooperative, Typing, Rougelike, Web Game
 
 WebGL
 
+### Link To Game
+
+[Play Typomancers Here!](https://csci-526.github.io/main-qwerty/)
+
 ### Description
 
 Typomancers is a cooperative typing rougelike games developed for play in browsers through WebGL. In this game, players will join together to defeat as many enemies as they can. At the end of each battle, they will choose from a variety of curses and buffs that will alter the way they type and play the game.
