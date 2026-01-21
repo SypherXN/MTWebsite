@@ -3,7 +3,7 @@ name: Typomancers
 category: Game Development
 tools: [Unity, C#, GitHub, WebGL]
 image: https://i.imgur.com/09uFnp3.png
-description: Cooperative typing rougelike game where players work together to defeat as many enemies through typing
+description: Cooperative typing roguelike game where players work together to defeat as many enemies through typing
 ---
 
 # Typomancers
@@ -20,7 +20,7 @@ August 2025 - December 2025
 
 ### Genre
 
-Cooperative, Typing, Rougelike, Web Game
+Cooperative, Typing, Roguelike, Web Game
 
 ### Platform
 
@@ -32,7 +32,7 @@ WebGL
 
 ### Description
 
-Typomancers is a cooperative typing rougelike games developed for play in browsers through WebGL. In this game, players will join together to defeat as many enemies as they can. At the end of each battle, they will choose from a variety of curses and buffs that will alter the way they type and play the game.
+Typomancers is a cooperative typing roguelike games developed for play in browsers through WebGL. In this game, players will join together to defeat as many enemies as they can. At the end of each battle, they will choose from a variety of curses and buffs that will alter the way they type and play the game.
 
 ---
 
@@ -48,7 +48,7 @@ Typomancers is a cooperative typing rougelike games developed for play in browse
 
 - Develop a game experience that can be played on browsers using WebGL for CTIN 526 at USC
 
-- Lead a team of 5 engineers through development of a cooperative typing rouge-like game
+- Lead a team of 5 engineers through development of a cooperative typing rogue-like game
 
 - Utilize GitHub for version control to streamline code organization
 
@@ -56,7 +56,7 @@ Typomancers is a cooperative typing rougelike games developed for play in browse
 
 - Implement Unity Analytics to identify player behavior issues and iteratively optimized gameplay
 
-- Create a unique cooperative rougelike game designed around typing as the core mechanic
+- Create a unique cooperative roguelike game designed around typing as the core mechanic
 
 - Design a scalable network architecture that supports seamless feature expansion while minimizing synchronization issues
 
