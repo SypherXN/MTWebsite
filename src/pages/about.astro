@@ -1,0 +1,151 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Timeline from "../components/Timeline.astro";
+import type { TimelineEntry } from "../components/Timeline.astro";
+import site from "../data/site.json";
+import skills from "../data/skills.json";
+import experience from "../data/experience.json";
+import education from "../data/education.json";
+
+const experienceEntries = experience as TimelineEntry[];
+const educationEntries = education as TimelineEntry[];
+---
+<BaseLayout title="About" description={`About ${site.name} - game developer and USC graduate student.`} showResumeFab>
+  <section class="section container">
+    <h1 class="section-title">About</h1>
+
+    <div class="about-intro">
+      <div class="about-intro-media">
+        <img
+          class="about-photo"
+          src={site.image}
+          alt={`Photo of ${site.name}`}
+          width="400"
+          height="500"
+          loading="eager"
+        />
+      </div>
+      <div class="prose about-intro-text">
+        <p>
+          Game Developer with an M.S. in Computer Science from the University of Southern California and a B.S. in
+          Computer Engineering from UC Santa Barbara, specializing in game development, real-time systems, and XR
+          applications.
+        </p>
+        <p>
+          Experienced in developing multiplayer systems, mixed reality applications, gameplay programming, and real-time
+          interactive experiences using Unity, C++, C#, Python, and MetaXR. My work has included multiplayer networking,
+          XR interaction systems, rendering techniques, hardware/software integration, and performance optimization.
+        </p>
+        <p>
+          I'm particularly interested in building immersive systems that combine technical depth with meaningful user
+          interaction, especially in areas involving XR, simulation, robotics, and real-time experiences.
+        </p>
+        <p>
+          Other than being in front of my computer writing code or playing video games, I also enjoy SCUBA diving,
+          snowboarding, skiing, and trying new food places.
+        </p>
+
+        <div class="about-contact-inline">
+          <h2 class="about-contact-title">Contact</h2>
+          <p><strong>Email:</strong> <a href={`mailto:${site.email}`}>{site.email}</a></p>
+          <p><strong>GitHub:</strong> <a href={site.github} target="_blank" rel="noopener noreferrer">{site.github}</a></p>
+          <p><strong>LinkedIn:</strong> <a href={site.linkedin} target="_blank" rel="noopener noreferrer">{site.linkedin}</a></p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="about-section-title">Experience</h2>
+    <Timeline entries={experienceEntries} />
+
+    <h2 class="about-section-title">Education</h2>
+    <Timeline entries={educationEntries} />
+
+    <h2 class="about-section-title">Skills</h2>
+    <div class="chips skills-chips">
+      {skills.map((s) => <span class="chip">{s}</span>)}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .about-section-title {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 2.5rem 0 1.25rem;
+  }
+
+  .about-intro {
+    display: grid;
+    grid-template-columns: minmax(260px, 360px) 1fr;
+    gap: 2.5rem;
+    align-items: stretch;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-intro-media {
+    display: flex;
+    min-height: 100%;
+  }
+
+  .about-photo {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: var(--radius);
+    border: 2px solid color-mix(in srgb, var(--accent-primary) 45%, var(--border));
+    box-shadow:
+      0 12px 40px rgba(0, 0, 0, 0.35),
+      0 0 0 1px var(--border);
+  }
+
+  .about-intro-text {
+    max-width: none;
+  }
+
+  .about-intro-text p:first-child {
+    margin-top: 0;
+  }
+
+  .about-contact-inline {
+    margin-top: 1.25rem;
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent-primary);
+    border-radius: var(--radius);
+    background: color-mix(in srgb, var(--bg-elevated) 80%, transparent);
+  }
+
+  .about-contact-title {
+    margin: 0 0 0.6rem;
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .about-contact-inline p {
+    margin: 0.35rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .about-intro {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .about-intro-media {
+      max-width: 320px;
+      margin-inline: auto;
+      min-height: auto;
+    }
+
+    .about-photo {
+      height: auto;
+      aspect-ratio: 4 / 5;
+    }
+  }
+</style>

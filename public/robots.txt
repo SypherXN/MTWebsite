@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://matthewgtran.com/sitemap-index.xml

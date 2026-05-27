@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProjectDetails from "../../components/ProjectDetails.astro";
+import { getCollection, render } from "astro:content";
+import { toYouTubeEmbedUrl } from "../../utils/youtube";
+
+export async function getStaticPaths() {
+  const projects = await getCollection("projects");
+  return projects.map((project) => ({
+    params: { slug: project.id },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+const { title, summary, overview, image, youtube, role, dates, genre, platform, tools, links } =
+  project.data;
+const overviewText = overview ?? summary;
+const youtubeEmbed = youtube ? toYouTubeEmbedUrl(youtube) : null;
+---
+<BaseLayout title={title} description={summary} showResumeFab>
+  <article class="section container prose">
+    {youtubeEmbed ? (
+      <div class="case-hero-video">
+        <iframe
+          src={youtubeEmbed}
+          title={`${title} video`}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        />
+      </div>
+    ) : (
+      <div class="case-hero-media" style={`--hero-bg: url("${image}")`}>
+        <div class="case-hero-media-bg" aria-hidden="true"></div>
+        <img src={image} alt={title} />
+      </div>
+    )}
+    <h1>{title}</h1>
+    <h2>Overview</h2>
+    {overviewText.split(/\n\n+/).map((paragraph) => (
+      <p>{paragraph.trim()}</p>
+    ))}
+    <ProjectDetails
+      role={role}
+      dates={dates}
+      genre={genre}
+      platform={platform}
+      tools={tools}
+      links={links}
+    />
+    <Content />
+  </article>
+</BaseLayout>

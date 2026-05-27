@@ -1,0 +1,81 @@
+---
+interface Props {
+  role?: string;
+  dates?: string;
+  genre?: string;
+  platform?: string;
+  tools?: string[];
+  links?: { demo?: string; demoLabel?: string; repo?: string; store?: string };
+}
+
+const { role, dates, genre, platform, tools = [], links } = Astro.props;
+const hasMeta = role || dates || genre || platform;
+const hasLinks = links?.demo || links?.repo || links?.store;
+
+function demoLinkLabel(url: string, customLabel?: string): string {
+  if (customLabel) return customLabel;
+  if (/steampowered\.com/i.test(url)) return "Steam page";
+  return "Play / demo";
+}
+
+function storeLinkLabel(url: string): string {
+  if (/meta\.com/i.test(url)) return "Meta Horizon store";
+  return "Store";
+}
+---
+{(hasMeta || hasLinks || tools.length > 0) && (
+  <div class="project-details">
+    {role && (
+      <p>
+        <strong>Role:</strong>{" "}
+        {role}
+      </p>
+    )}
+    {dates && (
+      <p>
+        <strong>Dates:</strong>{" "}
+        {dates}
+      </p>
+    )}
+    {genre && (
+      <p>
+        <strong>Genre:</strong>{" "}
+        {genre}
+      </p>
+    )}
+    {platform && (
+      <p>
+        <strong>Platform:</strong>{" "}
+        {platform}
+      </p>
+    )}
+    {hasLinks && (
+      <p class="project-details-links">
+        {links?.store && (
+          <a href={links.store} rel="noopener noreferrer" target="_blank">
+            <strong>{storeLinkLabel(links.store)}</strong>
+          </a>
+        )}
+        {links?.store && (links?.demo || links?.repo) && " · "}
+        {links?.demo && (
+          <a href={links.demo} rel="noopener noreferrer" target="_blank">
+            <strong>{demoLinkLabel(links.demo, links.demoLabel)}</strong>
+          </a>
+        )}
+        {links?.demo && links?.repo && " · "}
+        {links?.repo && (
+          <a href={links.repo} rel="noopener noreferrer" target="_blank">
+            <strong>Repository</strong>
+          </a>
+        )}
+      </p>
+    )}
+    {tools.length > 0 && (
+      <div class="chips">
+        {tools.map((tool) => (
+          <span class="chip">{tool}</span>
+        ))}
+      </div>
+    )}
+  </div>
+)}

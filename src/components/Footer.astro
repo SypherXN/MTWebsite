@@ -1,0 +1,24 @@
+---
+import site from "../data/site.json";
+import MailIcon from "./icons/Mail.astro";
+import GithubIcon from "./icons/Github.astro";
+import LinkedinIcon from "./icons/Linkedin.astro";
+
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="container">
+    <div class="social-row">
+      <a class="icon-btn" href={`mailto:${site.email}`} aria-label="Email Matthew Tran">
+        <MailIcon />
+      </a>
+      <a class="icon-btn" href={site.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+        <GithubIcon />
+      </a>
+      <a class="icon-btn" href={site.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+        <LinkedinIcon />
+      </a>
+    </div>
+    <p>&copy; {year} {site.name}</p>
+  </div>
+</footer>

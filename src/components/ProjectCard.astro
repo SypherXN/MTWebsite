@@ -1,0 +1,30 @@
+---
+import type { CollectionEntry } from "astro:content";
+interface Props { project: CollectionEntry<"projects"> }
+const { project } = Astro.props;
+const { title, summary, image, tools } = project.data;
+const href = `/projects/${project.id}/`;
+---
+<a
+  class:list={["project-card", { "project-card--featured": project.data.featured }]}
+  href={href}
+>
+  <div class="project-card-media" style={`--card-bg: url("${image}")`}>
+    <div class="project-card-media-bg" aria-hidden="true"></div>
+    <img
+      class="project-card-media-img"
+      src={image}
+      alt={title}
+      loading="lazy"
+      width="640"
+      height="400"
+    />
+  </div>
+  <div class="project-card-body">
+    <h3>{title}</h3>
+    <p>{summary}</p>
+    <div class="chips">
+      {tools.slice(0, 4).map((t) => <span class="chip">{t}</span>)}
+    </div>
+  </div>
+</a>

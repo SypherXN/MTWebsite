@@ -1,0 +1,79 @@
+---
+import site from "../data/site.json";
+import SearchIcon from "./icons/Search.astro";
+import SunIcon from "./icons/Sun.astro";
+import MoonIcon from "./icons/Moon.astro";
+import MenuIcon from "./icons/Menu.astro";
+
+const path = Astro.url.pathname;
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/projects/", label: "Projects" },
+  { href: "/about/", label: "About" },
+  { href: "/resume/", label: "Resume" },
+];
+const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
+---
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="/">{site.name}</a>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      {links.map((l) => (
+        <a href={l.href} aria-current={isActive(l.href) ? "page" : undefined}>{l.label}</a>
+      ))}
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="icon-btn" id="search-open" aria-label="Search projects">
+        <SearchIcon />
+      </button>
+      <button
+        type="button"
+        class="icon-btn theme-toggle"
+        id="theme-toggle"
+        aria-label="Switch to light mode"
+      >
+        <SunIcon />
+        <MoonIcon />
+      </button>
+      <button
+        type="button"
+        class="icon-btn mobile-toggle"
+        id="nav-toggle"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Open navigation menu"
+      >
+        <MenuIcon />
+      </button>
+    </div>
+  </div>
+</header>
+<script>
+  const nav = document.getElementById("site-nav");
+  const navToggle = document.getElementById("nav-toggle");
+
+  navToggle?.addEventListener("click", () => {
+    const open = nav?.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    navToggle.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+  });
+
+  const themeToggle = document.getElementById("theme-toggle");
+  const updateThemeLabel = () => {
+    const isLight = document.documentElement.dataset.theme === "light";
+    themeToggle?.setAttribute("aria-label", isLight ? "Switch to dark mode" : "Switch to light mode");
+  };
+
+  themeToggle?.addEventListener("click", () => {
+    const root = document.documentElement;
+    const next = root.dataset.theme === "light" ? "dark" : "light";
+    root.dataset.theme = next;
+    localStorage.setItem("theme", next);
+    updateThemeLabel();
+  });
+  updateThemeLabel();
+
+  document.getElementById("search-open")?.addEventListener("click", () => {
+    document.getElementById("search-modal")?.classList.add("open");
+  });
+</script>

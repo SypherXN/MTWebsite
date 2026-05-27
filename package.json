@@ -1,0 +1,23 @@
+{
+  "name": "matthew-tran-portfolio",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check",
+    "build:preview": "npm run build && npm run preview",
+    "postbuild": "pagefind --site dist"
+  },
+  "dependencies": {
+    "astro": "^6.3.8"
+  },
+  "devDependencies": {
+    "pagefind": "^1.5.2"
+  }
+}
