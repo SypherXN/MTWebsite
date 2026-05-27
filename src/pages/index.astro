@@ -10,9 +10,19 @@ const featured = projects.filter((p) => p.data.featured).slice(0, 3);
 ---
 <BaseLayout>
   <section class="hero container">
-    <img class="hero-photo" src={site.image} alt={site.name} width="160" height="160" />
+    <div class="hero-photo-frame">
+      <img
+        class="hero-photo"
+        src={site.image}
+        alt={site.name}
+        width="320"
+        height="320"
+        loading="eager"
+        decoding="async"
+      />
+    </div>
     <h1>{site.name}</h1>
-    <p class="subtitle">{site.title} ? {site.subtitle}</p>
+    <p class="subtitle">{site.title} | {site.subtitle}</p>
     <p class="tagline">{site.tagline}</p>
     <div class="hero-ctas">
       <a class="btn btn-primary" href={withBase("/projects/")}>View Projects</a>

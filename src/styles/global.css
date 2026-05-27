@@ -13,7 +13,15 @@ body{margin:0;font-family:var(--font-sans);background:var(--bg-primary);color:va
 .btn-primary{background:var(--accent-primary);color:#0c0c0e}
 .btn-ghost{border:1px solid var(--border);color:var(--text-primary)}
 .hero{padding:4rem 0;text-align:center}
-.hero-photo{width:160px;height:160px;border-radius:50%;object-fit:cover;margin:0 auto 1.5rem;border:3px solid var(--accent-primary)}
+.hero-photo-frame{
+  width:160px;height:160px;margin:0 auto 1.5rem;border-radius:50%;overflow:hidden;flex-shrink:0;
+  box-shadow:0 0 0 2px color-mix(in srgb,var(--accent-primary) 70%,var(--border)),0 10px 28px rgba(0,0,0,.28);
+}
+.hero-photo{
+  display:block;width:100%;height:100%;object-fit:cover;object-position:center 18%;
+  image-rendering:auto;-webkit-backface-visibility:hidden;backface-visibility:hidden;
+  transform:translateZ(0);filter:contrast(.96) saturate(.97);
+}
 .hero h1{font-family:var(--font-display);font-size:clamp(2.5rem,6vw,3.5rem);margin:0}
 .hero .subtitle{color:var(--accent-secondary)}
 .hero .tagline{color:var(--text-muted);max-width:36ch;margin:1rem auto}
