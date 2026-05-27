@@ -13,7 +13,7 @@ const featured = projects.filter((p) => p.data.featured).slice(0, 3);
     <div class="hero-photo-frame">
       <img
         class="hero-photo"
-        src={site.image}
+        src={withBase(site.image)}
         alt={site.name}
         width="320"
         height="320"

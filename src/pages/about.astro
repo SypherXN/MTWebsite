@@ -6,6 +6,7 @@ import site from "../data/site.json";
 import skills from "../data/skills.json";
 import experience from "../data/experience.json";
 import education from "../data/education.json";
+import { withBase } from "../utils/base";
 
 const experienceEntries = experience as TimelineEntry[];
 const educationEntries = education as TimelineEntry[];
@@ -18,7 +19,7 @@ const educationEntries = education as TimelineEntry[];
       <div class="about-intro-media">
         <img
           class="about-photo"
-          src={site.image}
+          src={withBase(site.image)}
           alt={`Photo of ${site.name}`}
           width="400"
           height="500"
