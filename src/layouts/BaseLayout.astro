@@ -26,6 +26,7 @@ const plausibleEnabled = import.meta.env.PUBLIC_PLAUSIBLE_ENABLED === "true";
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
     <link rel="icon" type="image/svg+xml" href={withBase("/favicon.svg")} />
+    <link rel="apple-touch-icon" href={withBase("/favicon.svg")} />
     <script is:inline>
       (function () {
         const stored = localStorage.getItem("theme");
