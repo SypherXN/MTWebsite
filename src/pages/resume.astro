@@ -1,10 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { withBase } from "../utils/base";
+
+const resumePdf = withBase("/resume.pdf");
 ---
 <BaseLayout title="Resume" description="Resume — Matthew Tran" showResumeFab>
   <section class="section container">
     <h1 class="section-title">Resume</h1>
-    <p><a class="btn btn-primary" href="/resume.pdf" download>Download Resume PDF</a></p>
-    <iframe src="/resume.pdf#toolbar=0" title="Resume PDF" width="100%" height="900" style="border:1px solid var(--border);border-radius:12px;margin-top:1.5rem;min-height:70vh" />
+    <p><a class="btn btn-primary" href={resumePdf} download>Download Resume PDF</a></p>
+    <iframe src={`${resumePdf}#toolbar=0`} title="Resume PDF" width="100%" height="900" style="border:1px solid var(--border);border-radius:12px;margin-top:1.5rem;min-height:70vh" />
   </section>
 </BaseLayout>

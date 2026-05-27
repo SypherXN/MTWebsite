@@ -12,7 +12,7 @@
     "astro": "astro",
     "check": "astro check",
     "build:preview": "npm run build && npm run preview",
-    "postbuild": "pagefind --site dist"
+    "postbuild": "node scripts/pagefind.mjs"
   },
   "dependencies": {
     "astro": "^6.3.8"

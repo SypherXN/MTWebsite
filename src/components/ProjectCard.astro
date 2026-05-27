@@ -1,19 +1,22 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { withBase } from "../utils/base";
+
 interface Props { project: CollectionEntry<"projects"> }
 const { project } = Astro.props;
 const { title, summary, image, tools } = project.data;
-const href = `/projects/${project.id}/`;
+const href = withBase(`/projects/${project.id}/`);
+const cover = withBase(image);
 ---
 <a
   class:list={["project-card", { "project-card--featured": project.data.featured }]}
   href={href}
 >
-  <div class="project-card-media" style={`--card-bg: url("${image}")`}>
+  <div class="project-card-media" style={`--card-bg: url("${cover}")`}>
     <div class="project-card-media-bg" aria-hidden="true"></div>
     <img
       class="project-card-media-img"
-      src={image}
+      src={cover}
       alt={title}
       loading="lazy"
       width="640"

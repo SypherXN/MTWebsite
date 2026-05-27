@@ -4,22 +4,24 @@ import SearchIcon from "./icons/Search.astro";
 import SunIcon from "./icons/Sun.astro";
 import MoonIcon from "./icons/Moon.astro";
 import MenuIcon from "./icons/Menu.astro";
+import { stripBase, withBase } from "../utils/base";
 
-const path = Astro.url.pathname;
+const path = stripBase(Astro.url.pathname);
 const links = [
-  { href: "/", label: "Home" },
-  { href: "/projects/", label: "Projects" },
-  { href: "/about/", label: "About" },
-  { href: "/resume/", label: "Resume" },
+  { path: "/", label: "Home" },
+  { path: "/projects/", label: "Projects" },
+  { path: "/about/", label: "About" },
+  { path: "/resume/", label: "Resume" },
 ];
-const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
+const isActive = (linkPath: string) =>
+  linkPath === "/" ? path === "/" : path.startsWith(linkPath);
 ---
 <header class="site-header">
   <div class="container header-inner">
-    <a class="logo" href="/">{site.name}</a>
+    <a class="logo" href={withBase("/")}>{site.name}</a>
     <nav class="nav" id="site-nav" aria-label="Main">
       {links.map((l) => (
-        <a href={l.href} aria-current={isActive(l.href) ? "page" : undefined}>{l.label}</a>
+        <a href={withBase(l.path)} aria-current={isActive(l.path) ? "page" : undefined}>{l.label}</a>
       ))}
     </nav>
     <div class="header-actions">

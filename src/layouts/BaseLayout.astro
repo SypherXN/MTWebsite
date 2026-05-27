@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import ResumeFab from "../components/ResumeFab.astro";
 import SearchModal from "../components/SearchModal.astro";
 import site from "../data/site.json";
+import { withBase } from "../utils/base";
 
 interface Props {
   title?: string;
@@ -24,7 +25,7 @@ const plausibleEnabled = import.meta.env.PUBLIC_PLAUSIBLE_ENABLED === "true";
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={withBase("/favicon.svg")} />
     <script is:inline>
       (function () {
         const stored = localStorage.getItem("theme");

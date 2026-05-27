@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import site from "../data/site.json";
 import { getSortedProjects } from "../utils/projects";
+import { withBase } from "../utils/base";
 
 const projects = await getSortedProjects();
 const featured = projects.filter((p) => p.data.featured).slice(0, 3);
@@ -11,12 +12,12 @@ const featured = projects.filter((p) => p.data.featured).slice(0, 3);
   <section class="hero container">
     <img class="hero-photo" src={site.image} alt={site.name} width="160" height="160" />
     <h1>{site.name}</h1>
-    <p class="subtitle">{site.title} · {site.subtitle}</p>
+    <p class="subtitle">{site.title} ? {site.subtitle}</p>
     <p class="tagline">{site.tagline}</p>
     <div class="hero-ctas">
-      <a class="btn btn-primary" href="/projects/">View Projects</a>
-      <a class="btn btn-ghost" href="/resume/">Resume</a>
-      <a class="btn btn-ghost" href="/about/">About</a>
+      <a class="btn btn-primary" href={withBase("/projects/")}>View Projects</a>
+      <a class="btn btn-ghost" href={withBase("/resume/")}>Resume</a>
+      <a class="btn btn-ghost" href={withBase("/about/")}>About</a>
     </div>
   </section>
 

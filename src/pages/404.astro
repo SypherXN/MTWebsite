@@ -1,10 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { withBase } from "../utils/base";
 ---
 <BaseLayout title="Page not found">
   <section class="section container" style="text-align:center">
     <h1 class="section-title">404</h1>
     <p>That page does not exist.</p>
-    <p><a class="btn btn-primary" href="/">Home</a> <a class="btn btn-ghost" href="/projects/">Projects</a></p>
+    <p><a class="btn btn-primary" href={withBase("/")}>Home</a> <a class="btn btn-ghost" href={withBase("/projects/")}>Projects</a></p>
   </section>
 </BaseLayout>

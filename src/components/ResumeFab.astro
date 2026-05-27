@@ -1,1 +1,4 @@
-<a class="btn btn-primary resume-fab" href="/resume/">Download Resume</a>
+---
+import { withBase } from "../utils/base";
+---
+<a class="btn btn-primary resume-fab" href={withBase("/resume/")}>Download Resume</a>
