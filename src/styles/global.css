@@ -89,7 +89,6 @@ body{margin:0;font-family:var(--font-sans);background:var(--bg-primary);color:va
 .timeline{padding-left:1.5rem;border-left:2px solid var(--border)}
 .timeline-item{margin-bottom:2rem}
 .now-box{border-left:4px solid var(--accent-primary);padding:1rem 1.25rem;background:var(--bg-elevated);margin-bottom:2rem;border-radius:var(--radius)}
-.resume-fab{position:fixed;bottom:1.5rem;right:1.5rem;z-index:90}
 .search-modal{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.75);display:none;padding:5vh 1rem}
 .search-modal.open{display:flex;justify-content:center}
 .site-footer{margin-top:4rem;padding:2rem 0;border-top:1px solid var(--border);text-align:center;color:var(--text-muted)}

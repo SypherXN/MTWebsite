@@ -1,7 +1,7 @@
 ---
 title: "Typomancers"
 category: "Game Development"
-featured: true
+featured: false
 tools: ["Unity", "C#", "GitHub", "WebGL"]
 role: "Lead/Network Engineer"
 dates: "August 2025 - December 2025"

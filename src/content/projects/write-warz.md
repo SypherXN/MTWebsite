@@ -1,7 +1,7 @@
 ---
 title: "Write Warz"
 category: "Game Development"
-featured: false
+featured: true
 tools: ["Unity", "C#", "GitHub", "Netcode"]
 role: "Game Development Intern"
 dates: "April 2025 - Jan 2026"

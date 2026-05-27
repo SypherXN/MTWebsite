@@ -2,7 +2,6 @@
 import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import ResumeFab from "../components/ResumeFab.astro";
 import SearchModal from "../components/SearchModal.astro";
 import site from "../data/site.json";
 import { withBase } from "../utils/base";
@@ -10,10 +9,9 @@ import { withBase } from "../utils/base";
 interface Props {
   title?: string;
   description?: string;
-  showResumeFab?: boolean;
 }
 
-const { title = site.name, description = site.description, showResumeFab = false } = Astro.props;
+const { title = site.name, description = site.description } = Astro.props;
 const pageTitle = title === site.name ? title : `${title} | ${site.name}`;
 const plausibleEnabled = import.meta.env.PUBLIC_PLAUSIBLE_ENABLED === "true";
 ---
@@ -46,7 +44,6 @@ const plausibleEnabled = import.meta.env.PUBLIC_PLAUSIBLE_ENABLED === "true";
       <slot />
     </main>
     <Footer />
-  {showResumeFab && <ResumeFab />}
     <SearchModal />
   </body>
 </html>
