@@ -33,6 +33,18 @@ links:
 </figure>
 <p><em>Showcasing Fly Exterminator at the USC Games Expo 2026</em></p>
 
+<figure class="media-frame" style="--frame-bg: url('/images/projects/fly-exterminator/quest-room-scanning.png')">
+  <div class="media-frame-bg" aria-hidden="true"></div>
+  <img src="/images/projects/fly-exterminator/quest-room-scanning.png" alt="Meta Quest 3 room scanning and scene mesh in a real kitchen" loading="lazy" />
+</figure>
+<p><em>Integrating Meta Quest 3 room scanning and scene understanding into the play space</em></p>
+
+<figure class="media-frame" style="--frame-bg: url('/images/projects/fly-exterminator/time-trial-ui.png')">
+  <div class="media-frame-bg" aria-hidden="true"></div>
+  <img src="/images/projects/fly-exterminator/time-trial-ui.png" alt="Fly Exterminator Time Trial mode UI in VR" loading="lazy" />
+</figure>
+<p><em>Time Trial UI designed and implemented for mode selection, settings, and navigation</em></p>
+
 <figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/zFf559Y.png')">
   <div class="media-frame-bg" aria-hidden="true"></div>
   <img src="https://i.imgur.com/zFf559Y.png" alt="Fly landing on walls in prototype" loading="lazy" />
