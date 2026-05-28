@@ -45,21 +45,21 @@ links:
 </figure>
 <p><em>Time Trial UI designed and implemented for mode selection, settings, and navigation</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/zFf559Y.png')">
+<figure class="media-frame" style="--frame-bg: url('/images/projects/fly-exterminator/prototype-fly-landing.png')">
   <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/zFf559Y.png" alt="Fly landing on walls in prototype" loading="lazy" />
+  <img src="/images/projects/fly-exterminator/prototype-fly-landing.png" alt="Fly landing on walls in prototype" loading="lazy" />
 </figure>
 <p><em>Ball represents a fly landing on walls</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/7DumMpS.png')">
+<figure class="media-frame" style="--frame-bg: url('/images/projects/fly-exterminator/sound-spatialization.png')">
   <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/7DumMpS.png" alt="MetaXR sound spatialization test" loading="lazy" />
+  <img src="/images/projects/fly-exterminator/sound-spatialization.png" alt="MetaXR sound spatialization test" loading="lazy" />
 </figure>
 <p><em>Testing MetaXR sound spatialization in a virtual environment</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/tMcaEbx.png')">
+<figure class="media-frame" style="--frame-bg: url('/images/projects/fly-exterminator/virtual-real-interaction.png')">
   <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/tMcaEbx.png" alt="Virtual and real object interaction test" loading="lazy" />
+  <img src="/images/projects/fly-exterminator/virtual-real-interaction.png" alt="Virtual and real object interaction test" loading="lazy" />
 </figure>
 <p><em>Testing interactions between virtual objects and real-world objects</em></p>
 

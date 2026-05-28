@@ -21,27 +21,27 @@ platform: "Tabletop"
 
 ## Gallery
 
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/1OSQ6DK.png')">
+<figure class="media-frame" style="--frame-bg: url('/images/projects/alchemical-antics/brainstorming.png')">
   <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/1OSQ6DK.png" alt="Initial brainstorming" loading="lazy" />
+  <img src="/images/projects/alchemical-antics/brainstorming.png" alt="Initial brainstorming" loading="lazy" />
 </figure>
 <p><em>Initial group brainstorming</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/hC0VaeC.png')">
+<figure class="media-frame" style="--frame-bg: url('/images/projects/alchemical-antics/first-playtest.png')">
   <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/hC0VaeC.png" alt="First iteration playtest" loading="lazy" />
+  <img src="/images/projects/alchemical-antics/first-playtest.png" alt="First iteration playtest" loading="lazy" />
 </figure>
 <p><em>First iteration playtest</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/AGwbPK5.png')">
+<figure class="media-frame" style="--frame-bg: url('/images/projects/alchemical-antics/second-playtest.png')">
   <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/AGwbPK5.png" alt="Second iteration playtest" loading="lazy" />
+  <img src="/images/projects/alchemical-antics/second-playtest.png" alt="Second iteration playtest" loading="lazy" />
 </figure>
 <p><em>Second iteration playtest</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/yoQ0ZV4.jpeg')">
+<figure class="media-frame" style="--frame-bg: url('/images/projects/alchemical-antics/final-materials.jpeg')">
   <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/yoQ0ZV4.jpeg" alt="Final game materials" loading="lazy" />
+  <img src="/images/projects/alchemical-antics/final-materials.jpeg" alt="Final game materials" loading="lazy" />
 </figure>
 <p><em>Final iteration with finalized materials</em></p>
 

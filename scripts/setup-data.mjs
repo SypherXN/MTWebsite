@@ -10,7 +10,7 @@ W("src/data/site.json", JSON.stringify({
   subtitle: "M.S. Computer Science @ USC",
   tagline: "Building multiplayer experiences that bring people together.",
   description: "Game developer passionate about creating games that bring people together.",
-  image: "https://i.imgur.com/hYVHop9.jpeg",
+  image: "/images/matthew-tran.png",
   email: "matthewgtran@gmail.com",
   github: "https://github.com/SypherXN",
   linkedin: "https://www.linkedin.com/in/mgtran"

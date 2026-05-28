@@ -30,15 +30,15 @@ links:
 
 ## Gallery
 
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/Wi2qHEP.png')">
+<figure class="media-frame" style="--frame-bg: url('/images/projects/write-warz/writing-pass-screen.png')">
   <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/Wi2qHEP.png" alt="New writing pass screen" loading="lazy" />
+  <img src="/images/projects/write-warz/writing-pass-screen.png" alt="New writing pass screen" loading="lazy" />
 </figure>
 <p><em>New writing pass screen</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/JSjxDJK.jpeg')">
+<figure class="media-frame" style="--frame-bg: url('/images/projects/write-warz/font-debug.jpeg')">
   <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/JSjxDJK.jpeg" alt="Font debug build" loading="lazy" />
+  <img src="/images/projects/write-warz/font-debug.jpeg" alt="Font debug build" loading="lazy" />
 </figure>
 <p><em>Font debug build for director feedback</em></p>
 

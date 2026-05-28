@@ -21,21 +21,21 @@ platform: "Tabletop"
 
 ## Gallery
 
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/DAilTRe.png')">
+<figure class="media-frame" style="--frame-bg: url('/images/projects/minecart-mayhem/brainstorming.png')">
   <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/DAilTRe.png" alt="Discord whiteboard brainstorming" loading="lazy" />
+  <img src="/images/projects/minecart-mayhem/brainstorming.png" alt="Discord whiteboard brainstorming" loading="lazy" />
 </figure>
 <p><em>Brainstorming on Discord whiteboard</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/I16pR7J.png')">
+<figure class="media-frame" style="--frame-bg: url('/images/projects/minecart-mayhem/first-playtest.png')">
   <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/I16pR7J.png" alt="First iteration playtest" loading="lazy" />
+  <img src="/images/projects/minecart-mayhem/first-playtest.png" alt="First iteration playtest" loading="lazy" />
 </figure>
 <p><em>In-group playtest of the first iteration</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/6qpCqtb.png')">
+<figure class="media-frame" style="--frame-bg: url('/images/projects/minecart-mayhem/final-setup.png')">
   <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/6qpCqtb.png" alt="Final iteration setup" loading="lazy" />
+  <img src="/images/projects/minecart-mayhem/final-setup.png" alt="Final iteration setup" loading="lazy" />
 </figure>
 <p><em>Final iteration with finalized materials</em></p>
 

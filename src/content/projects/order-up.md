@@ -21,27 +21,27 @@ platform: "Tabletop"
 
 ## Gallery
 
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/O0IZ9d2.png')">
+<figure class="media-frame" style="--frame-bg: url('/images/projects/order-up/rules-sheet.png')">
   <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/O0IZ9d2.png" alt="Order Up rules sheet" loading="lazy" />
+  <img src="/images/projects/order-up/rules-sheet.png" alt="Order Up rules sheet" loading="lazy" />
 </figure>
 <p><em>Order Up! rules</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/xEmNyms.png')">
+<figure class="media-frame" style="--frame-bg: url('/images/projects/order-up/index-cards.png')">
   <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/xEmNyms.png" alt="First iteration index cards" loading="lazy" />
+  <img src="/images/projects/order-up/index-cards.png" alt="First iteration index cards" loading="lazy" />
 </figure>
 <p><em>First iteration using index cards</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/weA61B4.jpeg')">
+<figure class="media-frame" style="--frame-bg: url('/images/projects/order-up/card-designs.jpeg')">
   <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/weA61B4.jpeg" alt="Updated card designs" loading="lazy" />
+  <img src="/images/projects/order-up/card-designs.jpeg" alt="Updated card designs" loading="lazy" />
 </figure>
 <p><em>Updated Canva card designs</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/b46ZUfA.png')">
+<figure class="media-frame" style="--frame-bg: url('/images/projects/order-up/final-playtest.png')">
   <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/b46ZUfA.png" alt="Final in-class playtest" loading="lazy" />
+  <img src="/images/projects/order-up/final-playtest.png" alt="Final in-class playtest" loading="lazy" />
 </figure>
 <p><em>Final in-class playtest</em></p>
 
