@@ -19,13 +19,13 @@ links:
 
 ## Duties
 
-- Develop a browser-playable WebGL experience for CTIN 526 at USC
-- Lead a team of 5 engineers through development of a cooperative typing roguelike
-- Utilize GitHub for version control to streamline code organization
-- Integrate Unity Multiplayer for a seamless cooperative experience
-- Implement Unity Analytics to identify player behavior issues and iteratively optimize gameplay
-- Create a unique cooperative roguelike designed around typing as the core mechanic
-- Design a scalable network architecture that supports feature expansion while minimizing synchronization issues
+- Developed a browser-playable WebGL experience for CTIN 526 at USC
+- Led a team of 5 engineers through development of a cooperative typing roguelike
+- Used GitHub workflows to keep code organization and team integration consistent
+- Integrated Unity Multiplayer to support stable cooperative sessions
+- Implemented Unity Analytics to identify behavior issues and guide gameplay iteration
+- Built a typing-first cooperative roguelike loop across combat, progression, and class systems
+- Designed a scalable network architecture that supported feature growth while minimizing synchronization issues
 
 ## Gallery
 

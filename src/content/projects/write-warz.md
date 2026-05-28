@@ -18,15 +18,13 @@ links:
 
 ## Duties
 
-- Implemented a custom emote system from the ground up to enhance player-to-player interaction
-- Leveraged Unity Remote Procedure Calls for a seamless multiplayer experience
-- Optimized game asset usage and the build process, reducing total game size by over 60%
-- Redesigned character abilities to introduce deeper strategic gameplay
-- Created UI scripts to handle movement and handling of UI elements
-- Identified and fixed bugs through playtesting across multiple systems
-- Created a new writing pass screen with artist assets, adapting existing PlayFab-based code to the new design
-- Built a Font Debug build so the studio director could tune font settings and character support
-- Built the emote system with Unity Netcode RPCs and DOTween show/hide sequences for the selector and emotes
+- Built and shipped a custom emote system using Unity Netcode RPCs and DOTween selector animations to improve player-to-player expression
+- Optimized asset usage and build configuration, reducing total game size by over 60%
+- Redesigned character abilities to add clearer strategic tradeoffs during multiplayer rounds
+- Implemented and refined UI behaviors across gameplay flows, including writing-pass interactions and navigation
+- Built a Font Debug build so the studio director could tune font settings and character coverage quickly
+- Adapted existing PlayFab-backed systems to support a new writing pass screen with updated art direction
+- Found and resolved gameplay and UI bugs through repeated cross-system playtesting
 
 ## Gallery
 

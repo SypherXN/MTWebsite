@@ -18,10 +18,11 @@ links:
 
 ## Duties
 
-- Contributed to a two-drone group (expandable to more) with mobile app control and live video
-- Helped implement four drone modes: Orbit, Explore, Bird, and Radar
-- Supported computer-vision-based object detection in Radar mode
-- Co-authored capstone documentation and conference submission
+- Served as hardware lead, constructing each drone platform from the ground up for the capstone system
+- Installed and configured flight-control software on each drone and validated control reliability before integration
+- Integrated and verified onboard hardware subsystems so sensors, compute, power, and communications worked together in flight
+- Supported implementation and testing of four operating modes: Orbit, Explore, Bird, and Radar
+- Co-authored capstone documentation and the conference paper submission
 
 ## Gallery
 

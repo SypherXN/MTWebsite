@@ -16,11 +16,11 @@ youtube: "https://www.youtube.com/watch?v=Az7e0diN2pE"
 
 ## Duties
 
-- Learn about developing with Unity and C#
-- Develop a 3D roguelike spaceship first-person shooter game
-- Work alongside fellow students to get playtest feedback
-- Identify and debug problems based on playtest feedback
-- Promote UCSB's game development program at the Gaucho Game Lab showcase
+- Built a 3D roguelike spaceship FPS in Unity over a single academic quarter
+- Implemented progression loops around scrap collection, upgrades, and escalating encounters
+- Collaborated with teammates through weekly playtests and converted feedback into scoped design and gameplay changes
+- Diagnosed and fixed gameplay issues surfaced during in-class and peer playtests
+- Presented the project at the Gaucho Game Lab showcase to represent UCSB game development work
 
 ## Gallery
 

@@ -20,10 +20,36 @@ platform: "PC (Unity)"
 
 ## Gallery
 
-Comparative renders and profiler results are documented in the final report.
+<figure class="media-frame" style="--frame-bg: url('/images/projects/virtual-displacement-mapping/report-pages/page-02.png')">
+  <div class="media-frame-bg" aria-hidden="true"></div>
+  <img src="/images/projects/virtual-displacement-mapping/report-pages/page-02.png" alt="VDMT report excerpt with mapping comparison figures" loading="lazy" />
+</figure>
+<p><em>Report visual comparison across mapping methods (excerpt)</em></p>
+
+<figure class="media-frame" style="--frame-bg: url('/images/projects/virtual-displacement-mapping/report-pages/page-03.png')">
+  <div class="media-frame-bg" aria-hidden="true"></div>
+  <img src="/images/projects/virtual-displacement-mapping/report-pages/page-03.png" alt="VDMT report excerpt showing oblique-angle comparisons" loading="lazy" />
+</figure>
+<p><em>Oblique-angle comparison and method discussion (excerpt)</em></p>
+
+<figure class="media-frame" style="--frame-bg: url('/images/projects/virtual-displacement-mapping/report-pages/page-04.png')">
+  <div class="media-frame-bg" aria-hidden="true"></div>
+  <img src="/images/projects/virtual-displacement-mapping/report-pages/page-04.png" alt="VDMT report excerpt with performance table and summary" loading="lazy" />
+</figure>
+<p><em>Performance table and summary conclusions (excerpt)</em></p>
+
+## Key Figures
+
+- Texture Mapping: 0.005-0.006 ms GPU render loop time
+- Normal Mapping: 0.006-0.007 ms
+- Parallax Mapping: 0.009-0.011 ms
+- Steep Parallax Mapping: 0.059-0.066 ms
+- Parallax Occlusion Mapping: 0.062-0.067 ms
+- Relief Mapping: 0.067-0.075 ms
+- Vertex Displacement (tessellation factor 20): 0.049-0.051 ms
 
 ## Process
 
-We implemented shaders in Unity/HLSL, measured performance systematically, and documented pros, cons, and depth realism for each technique in a report that received the highest grade in the course.
+We implemented shaders in Unity/HLSL, measured performance systematically, and documented pros, cons, and depth realism for each technique in a report that received the highest grade in the course. The key performance result was that true vertex displacement with tessellation outperformed several advanced virtual displacement variants while also producing higher-fidelity silhouettes and lighting behavior.
 
 **Artifacts:** [Report PDF](/assets/VDMT_report.pdf) · [GitHub repository](https://github.com/usc-jmshi/csci_580_project)

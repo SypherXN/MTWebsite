@@ -16,12 +16,11 @@ youtube: "https://www.youtube.com/watch?v=p-moSojMYow"
 
 ## Duties
 
-- Cooperated with 9 other students to produce a game designed around a mind control mechanic
-- Led development on enemy and ally unit AI
-- Utilized GitHub for version control to streamline code organization
-- Synchronized with other team members during daily Scrum meetings
-- Developed a way to convert enemy units into ally units
-- Created a unit skill system to allow unique combat and puzzles
+- Co-developed the project with a 10-person student team centered on a mind-control core mechanic
+- Led enemy and ally AI development for combat and puzzle interactions
+- Built the conversion pipeline that turns enemy units into controllable allies
+- Implemented a unit skill system that supported distinct behaviors and encounter design
+- Coordinated daily through Scrum and GitHub-based collaboration to keep AI work aligned with game and level goals
 
 ## Gallery
 
