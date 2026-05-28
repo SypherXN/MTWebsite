@@ -5,15 +5,32 @@ import Footer from "../components/Footer.astro";
 import SearchModal from "../components/SearchModal.astro";
 import site from "../data/site.json";
 import { withBase } from "../utils/base";
+import { absoluteUrl, defaultOgImage } from "../utils/seo";
 
 interface Props {
   title?: string;
   description?: string;
+  /** Site-root path or absolute URL for social preview image. */
+  image?: string;
+  type?: "website" | "article";
+  noindex?: boolean;
 }
 
-const { title = site.name, description = site.description } = Astro.props;
+const {
+  title = site.name,
+  description = site.description,
+  image,
+  type = "website",
+  noindex = false,
+} = Astro.props;
+
 const pageTitle = title === site.name ? title : `${title} | ${site.name}`;
+const siteUrl = Astro.site ?? new URL("https://matthewgtran.com");
+const canonicalURL = new URL(Astro.url.pathname, siteUrl);
+const ogImageURL = absoluteUrl(image ?? defaultOgImage(), siteUrl);
 const plausibleEnabled = import.meta.env.PUBLIC_PLAUSIBLE_ENABLED === "true";
+const ga4Enabled = import.meta.env.PUBLIC_GA4_ENABLED === "true";
+const ga4Id = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
 ---
 <!doctype html>
 <html lang="en">
@@ -21,10 +38,28 @@ const plausibleEnabled = import.meta.env.PUBLIC_PLAUSIBLE_ENABLED === "true";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={canonicalURL.href} />
     <title>{pageTitle}</title>
     <link rel="icon" type="image/svg+xml" href={withBase("/favicon.svg")} />
     <link rel="apple-touch-icon" href={withBase("/favicon.svg")} />
+
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL.href} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:image:alt" content={title === site.name ? `${site.name} — ${site.title}` : title} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageURL} />
+    <meta name="twitter:image:alt" content={title === site.name ? `${site.name} — ${site.title}` : title} />
+
     <script is:inline>
       (function () {
         const stored = localStorage.getItem("theme");
@@ -35,6 +70,17 @@ const plausibleEnabled = import.meta.env.PUBLIC_PLAUSIBLE_ENABLED === "true";
     </script>
     {plausibleEnabled && (
       <script defer data-domain={import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN} src="https://plausible.io/js/script.js" />
+    )}
+    {ga4Enabled && ga4Id && (
+      <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`} />
+        <script is:inline define:vars={{ ga4Id }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag("js", new Date());
+          gtag("config", ga4Id);
+        </script>
+      </>
     )}
   </head>
   <body>

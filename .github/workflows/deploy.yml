@@ -30,8 +30,11 @@ jobs:
           # Custom domain serves at the root — not under /MTWebsite/
           ASTRO_SITE: https://matthewgtran.com
           ASTRO_BASE: /
-          PUBLIC_PLAUSIBLE_ENABLED: true
+          # Plausible is paid; leave disabled unless you add a subscription.
+          PUBLIC_PLAUSIBLE_ENABLED: false
           PUBLIC_PLAUSIBLE_DOMAIN: matthewgtran.com
+          PUBLIC_GA4_ENABLED: true
+          PUBLIC_GA4_MEASUREMENT_ID: G-MX7RWYEFFF
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

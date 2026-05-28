@@ -21,7 +21,7 @@ const overviewText = overview ?? summary;
 const youtubeEmbed = youtube ? toYouTubeEmbedUrl(youtube) : null;
 const heroImage = withBase(image);
 ---
-<BaseLayout title={title} description={summary}>
+<BaseLayout title={title} description={summary} image={image} type="article">
   <article class="section container prose">
     {youtubeEmbed ? (
       <div class="case-hero-video">
