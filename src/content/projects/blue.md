@@ -7,8 +7,10 @@ role: "QA Lead and Game Developer"
 dates: "May 2026 - Current"
 startDate: "2026-05-01"
 image: "/images/projects/blue/cover.png"
-summary: "Spaceship building/combat game created for USC AGP 2026"
-overview: "B.L.U.E. is a multiplayer spaceship building and combat game developed as part of USC Advanced Games Program 2026. Players assemble their ships and battle one another in competitive matches."
+summary: "Multiplayer engineering combat sandbox—build modular ships with real physics and fight in accurately simulated deep-space battles (USC AGP 2026)"
+overview: "B.L.U.E. is a multiplayer engineering combat sandbox set in deep space, developed as part of USC Advanced Games Program 2026. Build your own ships with modular parts, shape their behavior through real physics, and take them into battles where every force, collision, and failure is accurately simulated.
+
+Use intuitive engineering tools to design engines, structures, and systems that actually work in an experience where every design choice matters. Experiment with mass, balance, thrust, durability, and more. Whether you enjoy building, competing, or experimenting, B.L.U.E. lets you bring your imagined spacecraft to life and watch them fly!"
 genre: "Multiplayer, Action, Sci-fi, Competitive"
 platform: "PC"
 youtube: "https://www.youtube.com/watch?v=2kinj5IuURQ"
