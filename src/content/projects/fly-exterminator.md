@@ -27,6 +27,12 @@ links:
 
 ## Gallery
 
+<figure class="media-frame" style="--frame-bg: url('/images/projects/fly-exterminator/usc-games-expo-2026.png')">
+  <div class="media-frame-bg" aria-hidden="true"></div>
+  <img src="/images/projects/fly-exterminator/usc-games-expo-2026.png" alt="Fly Exterminator showcased at USC Games Expo 2026" loading="lazy" />
+</figure>
+<p><em>Showcasing Fly Exterminator at the USC Games Expo 2026</em></p>
+
 <figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/zFf559Y.png')">
   <div class="media-frame-bg" aria-hidden="true"></div>
   <img src="https://i.imgur.com/zFf559Y.png" alt="Fly landing on walls in prototype" loading="lazy" />
