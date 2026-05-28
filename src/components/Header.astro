@@ -18,14 +18,20 @@ const isActive = (linkPath: string) =>
 ---
 <header class="site-header">
   <div class="container header-inner">
-    <a class="logo" href={withBase("/")}>{site.name}</a>
+    <a class="logo" href={withBase("/")} data-ga-cta="nav_logo">{site.name}</a>
     <nav class="nav" id="site-nav" aria-label="Main">
       {links.map((l) => (
-        <a href={withBase(l.path)} aria-current={isActive(l.path) ? "page" : undefined}>{l.label}</a>
+        <a
+          href={withBase(l.path)}
+          aria-current={isActive(l.path) ? "page" : undefined}
+          data-ga-cta={`nav_${l.label.toLowerCase()}`}
+        >
+          {l.label}
+        </a>
       ))}
     </nav>
     <div class="header-actions">
-      <button type="button" class="icon-btn" id="search-open" aria-label="Search projects">
+      <button type="button" class="icon-btn" id="search-open" aria-label="Search projects" data-ga-cta="search_open">
         <SearchIcon />
       </button>
       <button

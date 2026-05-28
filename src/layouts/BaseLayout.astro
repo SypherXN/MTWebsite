@@ -89,5 +89,8 @@ gtag('config', '${ga4Id}');`} />
     </main>
     <Footer />
     <SearchModal />
+    {ga4Enabled && ga4Id && (
+      <script defer src={withBase("/scripts/ga4-events.js")} />
+    )}
   </body>
 </html>

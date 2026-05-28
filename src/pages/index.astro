@@ -25,9 +25,9 @@ const featured = projects.filter((p) => p.data.featured).slice(0, 3);
     <p class="subtitle">{site.title} | {site.subtitle}</p>
     <p class="tagline">{site.tagline}</p>
     <div class="hero-ctas">
-      <a class="btn btn-primary" href={withBase("/projects/")}>View Projects</a>
-      <a class="btn btn-ghost" href={withBase("/resume/")}>Resume</a>
-      <a class="btn btn-ghost" href={withBase("/about/")}>About</a>
+      <a class="btn btn-primary" href={withBase("/projects/")} data-ga-cta="view_projects">View Projects</a>
+      <a class="btn btn-ghost" href={withBase("/resume/")} data-ga-cta="resume">Resume</a>
+      <a class="btn btn-ghost" href={withBase("/about/")} data-ga-cta="about">About</a>
     </div>
   </section>
 
