@@ -9,7 +9,6 @@ startDate: "2023-03-01"
 image: "/images/projects/virtual-displacement-mapping/cover.png"
 summary: "Testing and examination of virtual displacement mapping techniques"
 overview: "Final project for CSCI 570 (3-D Rendering and Graphics) at USC. Our team of four compared performance of multiple virtual displacement mapping techniques against true displacement mapping in Unity, profiling each approach and evaluating visual quality."
-genre: "Graphics research, real-time rendering"
 platform: "PC (Unity)"
 ---
 

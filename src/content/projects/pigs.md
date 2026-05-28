@@ -9,7 +9,6 @@ startDate: "2023-01-01"
 image: "/images/projects/pigs/cover.png"
 summary: "Automated drone group for information gathering around points/persons of interest"
 overview: "Personal Information Gathering System (P.I.G.S.) was my UCSB computer engineering capstone, sponsored by AeroVironment. Five seniors built a drone system that gathers situational information around the user for safety, controlled through a mobile app with multiple flight modes."
-genre: "Robotics, Surveillance, Capstone"
 platform: "Drone hardware + mobile app"
 youtube: "https://www.youtube.com/watch?v=dZNtxEBDu8k"
 links:

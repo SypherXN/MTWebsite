@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 
 const { project } = Astro.props;
 const { Content } = await render(project);
-const { title, summary, overview, image, youtube, role, dates, genre, platform, tools, links } =
+const { title, summary, overview, image, youtube, category, role, dates, genre, platform, tools, links } =
   project.data;
 const overviewText = overview ?? summary;
 const youtubeEmbed = youtube ? toYouTubeEmbedUrl(youtube) : null;
@@ -45,6 +45,7 @@ const heroImage = withBase(image);
       <p>{paragraph.trim()}</p>
     ))}
     <ProjectDetails
+      category={category}
       role={role}
       dates={dates}
       genre={genre}

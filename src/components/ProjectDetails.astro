@@ -1,5 +1,6 @@
 ---
 interface Props {
+  category?: string;
   role?: string;
   dates?: string;
   genre?: string;
@@ -8,8 +9,9 @@ interface Props {
   links?: { demo?: string; demoLabel?: string; repo?: string; store?: string };
 }
 
-const { role, dates, genre, platform, tools = [], links } = Astro.props;
-const hasMeta = role || dates || genre || platform;
+const { category, role, dates, genre, platform, tools = [], links } = Astro.props;
+const showGenre = genre && category !== "Computer Science";
+const hasMeta = role || dates || showGenre || platform;
 const hasLinks = links?.demo || links?.repo || links?.store;
 
 function demoLinkLabel(url: string, customLabel?: string): string {
@@ -37,7 +39,7 @@ function storeLinkLabel(url: string): string {
         {dates}
       </p>
     )}
-    {genre && (
+    {showGenre && (
       <p>
         <strong>Genre:</strong>{" "}
         {genre}

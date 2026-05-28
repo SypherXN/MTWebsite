@@ -48,7 +48,7 @@ startDate: "2025-01-01"
 image: "/images/projects/example/hero.png"
 summary: "Card summary text"
 overview: "Longer description for the project detail page (shown under Overview)."
-genre: "Action, Roguelike"   # optional; shown under Overview with bold labels
+genre: "Action, Roguelike"   # optional; Game Development / Game Design only (not Computer Science)
 platform: "PC"               # optional
 youtube: https://www.youtube.com/watch?v=...  # optional; detail page hero only (tiles use image)
 links:
