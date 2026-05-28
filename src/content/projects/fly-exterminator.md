@@ -8,7 +8,7 @@ dates: "January 2025 – Current"
 startDate: "2024-08-01"
 image: "/images/projects/fly-exterminator/cover.png"
 summary: "Mixed-reality game for Meta Quest 3 where players chase and catch virtual flies in your real room"
-overview: "Fly Exterminator is a Mixed-Reality (MR) video game for the Meta Quest 3 where players chase around and catch virtual flies in your real room using the Quest 3's scene capture functionality. Work on quick reflexes, satisfying interactions, and immersive MR mechanics designed specifically for Meta Quest 3."
+overview: "Fly Exterminator is a mixed-reality game for Meta Quest 3, developed by Boundary Interactive LLC. Players chase and catch virtual flies in their real room using Quest scene capture, with quick reflex gameplay, satisfying interactions, and MR mechanics built for standalone VR."
 genre: "Mixed Reality, Simulation, Competitive"
 platform: "Meta Quest 3"
 youtube: "https://www.youtube.com/watch?v=pCl-uN2TTYY"
@@ -18,12 +18,12 @@ links:
 
 ## Duties
 
-- Develop a game experience that can be completed in 5-10 minutes for CTIN 532L at USC
-- Work alongside one other student to develop a mixed reality game for the Meta Quest 3
-- Utilize Perforce for version control to streamline code organization
-- Replicate industry production schedules including prototyping, pre-production, production, and post-production
-- Create a realistic experience where players hunt virtual flies in their room
-- Design the user interface that fits the genre of the game
+- Co-developed Fly Exterminator with Boundary Interactive LLC as a mixed-reality title for Meta Quest 3, released on Meta Horizon
+- Owned game design and development across core gameplay loops, MR interactions, and player-facing UI for short-session play
+- Implemented room-scale MR using Quest scene capture so virtual flies integrate naturally with players' real environments
+- Collaborated in a two-person development team, using Perforce for version control, integration, and milestone delivery
+- Drove work through structured production phases—prototype, pre-production, production, and post-production—with playtest-driven iteration
+- Integrated MetaXR systems for spatial audio, virtual–physical interaction, and immersive feedback
 
 ## Gallery
 
