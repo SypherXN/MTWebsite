@@ -29,6 +29,18 @@ links:
 
 ## Gallery
 
+<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/SFHxOaU.png')">
+  <div class="media-frame-bg" aria-hidden="true"></div>
+  <img src="https://i.imgur.com/SFHxOaU.png" alt="Gold milestone lobby" loading="lazy" />
+</figure>
+<p><em>Gold milestone lobby screen</em></p>
+
+<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/abI85KG.png')">
+  <div class="media-frame-bg" aria-hidden="true"></div>
+  <img src="https://i.imgur.com/abI85KG.png" alt="Gold milestone battle screen" loading="lazy" />
+</figure>
+<p><em>Gold milestone battle screen</em></p>
+
 <figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/UXIOkpH.png')">
   <div class="media-frame-bg" aria-hidden="true"></div>
   <img src="https://i.imgur.com/UXIOkpH.png" alt="Unity multiplayer networking" loading="lazy" />
@@ -76,18 +88,6 @@ links:
   <img src="https://i.imgur.com/5Ik4CqK.png" alt="Ability usage analytics" loading="lazy" />
 </figure>
 <p><em>Ability usage statistics from Unity Analytics</em></p>
-
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/SFHxOaU.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/SFHxOaU.png" alt="Gold milestone lobby" loading="lazy" />
-</figure>
-<p><em>Gold milestone lobby screen</em></p>
-
-<figure class="media-frame" style="--frame-bg: url('https://i.imgur.com/abI85KG.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="https://i.imgur.com/abI85KG.png" alt="Gold milestone battle screen" loading="lazy" />
-</figure>
-<p><em>Gold milestone battle screen</em></p>
 
 ## Process
 
