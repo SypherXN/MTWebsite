@@ -84,7 +84,7 @@ gtag('config', '${ga4Id}');`} />
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <Header />
-    <main id="main" data-pagefind-body>
+    <main id="main" data-pagefind-body data-pagefind-meta={`title: ${pageTitle}`}>
       <slot />
     </main>
     <Footer />

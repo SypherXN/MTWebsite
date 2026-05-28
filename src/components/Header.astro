@@ -83,5 +83,9 @@ const isActive = (linkPath: string) =>
 
   document.getElementById("search-open")?.addEventListener("click", () => {
     document.getElementById("search-modal")?.classList.add("open");
+    window.setTimeout(() => {
+      const input = document.querySelector("#pagefind-search .pagefind-ui__search-input");
+      if (input instanceof HTMLInputElement) input.focus();
+    }, 50);
   });
 </script>

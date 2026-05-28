@@ -1,26 +1,54 @@
 ---
 import { withBase } from "../utils/base";
+
+const baseUrl = import.meta.env.BASE_URL;
+const normalizedBase = baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`;
 ---
 <div class="search-modal" id="search-modal" role="dialog" aria-label="Search" aria-hidden="true">
   <div class="search-panel">
-    <button type="button" class="icon-btn" id="search-close" style="margin-bottom:0.75rem">Close</button>
+    <div class="search-panel-header">
+      <h2 class="search-panel-title">Search projects</h2>
+      <button type="button" class="icon-btn" id="search-close" aria-label="Close search">Close</button>
+    </div>
     <link href={withBase("/pagefind/pagefind-ui.css")} rel="stylesheet" />
     <div id="pagefind-search" class="pagefind-ui"></div>
   </div>
 </div>
 <script>
-  document.getElementById("search-close")?.addEventListener("click", () => {
-    document.getElementById("search-modal")?.classList.remove("open");
+  const modal = document.getElementById("search-modal");
+  const closeBtn = document.getElementById("search-close");
+
+  closeBtn?.addEventListener("click", () => modal?.classList.remove("open"));
+
+  modal?.addEventListener("click", (e) => {
+    if (e.target === e.currentTarget) modal.classList.remove("open");
   });
-  document.getElementById("search-modal")?.addEventListener("click", (e) => {
-    if (e.target === e.currentTarget) e.currentTarget.classList.remove("open");
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") modal?.classList.remove("open");
+  });
+
+  modal?.addEventListener("click", (e) => {
+    const link = e.target instanceof Element ? e.target.closest("a.pagefind-ui__result-link") : null;
+    if (link) modal?.classList.remove("open");
   });
 </script>
 <script is:inline src={withBase("/pagefind/pagefind-ui.js")}></script>
-<script is:inline define:vars={{ baseUrl: import.meta.env.BASE_URL }}>
+<script is:inline define:vars={{ normalizedBase }}>
   window.addEventListener("DOMContentLoaded", () => {
-    if (typeof PagefindUI !== "undefined") {
-      new PagefindUI({ element: "#pagefind-search", showSubResults: true, baseUrl });
+    if (typeof PagefindUI === "undefined") return;
+
+    new PagefindUI({
+      element: "#pagefind-search",
+      baseUrl: normalizedBase,
+      showSubResults: false,
+      showImages: false,
+      excerptLength: 18,
+    });
+
+    const searchInput = document.querySelector("#pagefind-search .pagefind-ui__search-input");
+    if (searchInput instanceof HTMLInputElement) {
+      searchInput.placeholder = "Search by project name, tools, or topic…";
     }
   });
 </script>
