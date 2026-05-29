@@ -28,39 +28,27 @@ links:
 
 ## Gallery
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/fly-exterminator/usc-games-expo-2026.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/fly-exterminator/usc-games-expo-2026.png" alt="Fly Exterminator showcased at USC Games Expo 2026" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/fly-exterminator/usc-games-expo-2026.png" alt="Fly Exterminator showcased at USC Games Expo 2026" loading="lazy" />
 </figure>
 <p><em>Showcasing Fly Exterminator at the USC Games Expo 2026</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/fly-exterminator/quest-room-scanning.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/fly-exterminator/quest-room-scanning.png" alt="Meta Quest 3 room scanning and scene mesh in a real kitchen" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/fly-exterminator/quest-room-scanning.png" alt="Meta Quest 3 room scanning and scene mesh in a real kitchen" loading="lazy" />
 </figure>
 <p><em>Integrating Meta Quest 3 room scanning and scene understanding into the play space</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/fly-exterminator/time-trial-ui.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/fly-exterminator/time-trial-ui.png" alt="Fly Exterminator Time Trial mode UI in VR" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/fly-exterminator/time-trial-ui.png" alt="Fly Exterminator Time Trial mode UI in VR" loading="lazy" />
 </figure>
 <p><em>Time Trial UI designed and implemented for mode selection, settings, and navigation</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/fly-exterminator/prototype-fly-landing.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/fly-exterminator/prototype-fly-landing.png" alt="Fly landing on walls in prototype" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/fly-exterminator/prototype-fly-landing.png" alt="Fly landing on walls in prototype" loading="lazy" />
 </figure>
 <p><em>Ball represents a fly landing on walls</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/fly-exterminator/sound-spatialization.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/fly-exterminator/sound-spatialization.png" alt="MetaXR sound spatialization test" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/fly-exterminator/sound-spatialization.png" alt="MetaXR sound spatialization test" loading="lazy" />
 </figure>
 <p><em>Testing MetaXR sound spatialization in a virtual environment</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/fly-exterminator/virtual-real-interaction.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/fly-exterminator/virtual-real-interaction.png" alt="Virtual and real object interaction test" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/fly-exterminator/virtual-real-interaction.png" alt="Virtual and real object interaction test" loading="lazy" />
 </figure>
 <p><em>Testing interactions between virtual objects and real-world objects</em></p>
 

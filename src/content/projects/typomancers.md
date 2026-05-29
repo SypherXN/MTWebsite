@@ -29,63 +29,43 @@ links:
 
 ## Gallery
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/typomancers/gold-lobby.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/typomancers/gold-lobby.png" alt="Gold milestone lobby" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/typomancers/gold-lobby.png" alt="Gold milestone lobby" loading="lazy" />
 </figure>
 <p><em>Gold milestone lobby screen</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/typomancers/gold-battle.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/typomancers/gold-battle.png" alt="Gold milestone battle screen" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/typomancers/gold-battle.png" alt="Gold milestone battle screen" loading="lazy" />
 </figure>
 <p><em>Gold milestone battle screen</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/typomancers/multiplayer-networking.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/typomancers/multiplayer-networking.png" alt="Unity multiplayer networking" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/typomancers/multiplayer-networking.png" alt="Unity multiplayer networking" loading="lazy" />
 </figure>
 <p><em>Basic Unity Multiplayer networking</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/typomancers/early-typing-combat.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/typomancers/early-typing-combat.png" alt="Early typing and combat implementation" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/typomancers/early-typing-combat.png" alt="Early typing and combat implementation" loading="lazy" />
 </figure>
 <p><em>Early implementation of typing elements and enemy/player interaction</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/typomancers/early-class-selection.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/typomancers/early-class-selection.png" alt="Early class selection screen" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/typomancers/early-class-selection.png" alt="Early class selection screen" loading="lazy" />
 </figure>
 <p><em>Early class selection screen</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/typomancers/beta-lobby.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/typomancers/beta-lobby.png" alt="Beta lobby screen" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/typomancers/beta-lobby.png" alt="Beta lobby screen" loading="lazy" />
 </figure>
 <p><em>Beta lobby screen</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/typomancers/typing-field-ui.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/typomancers/typing-field-ui.png" alt="New typing field UI" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/typomancers/typing-field-ui.png" alt="New typing field UI" loading="lazy" />
 </figure>
 <p><em>New typing field inspired by Typeracer and MonkeyType</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/typomancers/curse-buff-tab.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/typomancers/curse-buff-tab.png" alt="Tab screen for curses and buffs" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/typomancers/curse-buff-tab.png" alt="Tab screen for curses and buffs" loading="lazy" />
 </figure>
 <p><em>Tab screen for curse/buff and class info</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/typomancers/tutorialization.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/typomancers/tutorialization.png" alt="Tutorialization" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/typomancers/tutorialization.png" alt="Tutorialization" loading="lazy" />
 </figure>
 <p><em>Tutorialization with prompts and sparkle highlights</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/typomancers/analytics.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/typomancers/analytics.png" alt="Ability usage analytics" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/typomancers/analytics.png" alt="Ability usage analytics" loading="lazy" />
 </figure>
 <p><em>Ability usage statistics from Unity Analytics</em></p>
 

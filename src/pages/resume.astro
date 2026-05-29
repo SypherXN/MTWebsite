@@ -5,9 +5,20 @@ import { withBase } from "../utils/base";
 const resumePdf = withBase("/resume.pdf");
 ---
 <BaseLayout title="Resume" description="Resume — Matthew Tran">
-  <section class="section container">
+  <section class="section container resume-page">
     <h1 class="section-title">Resume</h1>
-    <p><a class="btn btn-primary" href={resumePdf} download data-ga-event="resume_download">Download Resume PDF</a></p>
-    <iframe src={`${resumePdf}#toolbar=0`} title="Resume PDF" width="100%" height="900" style="border:1px solid var(--border);border-radius:12px;margin-top:1.5rem;min-height:70vh" />
+    <p>
+      <a class="btn btn-primary" href={resumePdf} download data-ga-event="resume_download">
+        Download Resume PDF
+      </a>
+    </p>
+    <div class="resume-viewer">
+      <iframe
+        src={`${resumePdf}#toolbar=0&view=FitH`}
+        title="Resume PDF"
+        width="100%"
+        loading="lazy"
+      />
+    </div>
   </section>
 </BaseLayout>

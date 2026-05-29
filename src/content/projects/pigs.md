@@ -26,9 +26,7 @@ links:
 
 ## Gallery
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/pigs/team-itc-2023.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/pigs/team-itc-2023.png" alt="Team at ITC 2023" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/pigs/team-itc-2023.png" alt="Team at ITC 2023" loading="lazy" />
 </figure>
 <p><em>Professor Yogananda Isukapalli, Matthew Tran, Yifan Pan, and Tianrui Hu at ITC 2023</em></p>
 

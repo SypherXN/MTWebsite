@@ -1,8 +1,9 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProjectDetails from "../../components/ProjectDetails.astro";
+import YouTubeFacade from "../../components/YouTubeFacade.astro";
 import { getCollection, render } from "astro:content";
-import { toYouTubeEmbedUrl } from "../../utils/youtube";
+import { creativeWorkJsonLd } from "../../utils/jsonld";
 import { withBase } from "../../utils/base";
 
 export async function getStaticPaths() {
@@ -15,28 +16,28 @@ export async function getStaticPaths() {
 
 const { project } = Astro.props;
 const { Content } = await render(project);
-const { title, summary, overview, image, youtube, category, role, dates, genre, platform, tools, links } =
+const { title, summary, overview, image, youtube, category, role, dates, genre, platform, tools, links, startDate } =
   project.data;
 const overviewText = overview ?? summary;
-const youtubeEmbed = youtube ? toYouTubeEmbedUrl(youtube) : null;
 const heroImage = withBase(image);
+const siteUrl = Astro.site ?? new URL("https://matthewgtran.com");
+const pageUrl = new URL(Astro.url.pathname, siteUrl);
+const articlePublishedTime = startDate ? `${startDate}T00:00:00.000Z` : undefined;
 ---
-<BaseLayout title={title} description={summary} image={image} type="article">
+<BaseLayout
+  title={title}
+  description={summary}
+  image={image}
+  type="article"
+  articlePublishedTime={articlePublishedTime}
+  jsonLd={creativeWorkJsonLd(project, pageUrl, siteUrl)}
+>
   <article class="section container prose">
-    {youtubeEmbed ? (
-      <div class="case-hero-video">
-        <iframe
-          src={youtubeEmbed}
-          title={`${title} video`}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        />
-      </div>
+    {youtube ? (
+      <YouTubeFacade url={youtube} title={title} />
     ) : (
-      <div class="case-hero-media" style={`--hero-bg: url("${heroImage}")`}>
-        <div class="case-hero-media-bg" aria-hidden="true"></div>
-        <img src={heroImage} alt={title} />
+      <div class="case-hero-media">
+        <img src={heroImage} alt={title} width="1280" height="720" loading="eager" decoding="async" />
       </div>
     )}
     <h1>{title}</h1>

@@ -7,11 +7,17 @@ import skills from "../data/skills.json";
 import experience from "../data/experience.json";
 import education from "../data/education.json";
 import { withBase } from "../utils/base";
+import { personJsonLd } from "../utils/jsonld";
 
 const experienceEntries = experience as TimelineEntry[];
 const educationEntries = education as TimelineEntry[];
+const siteUrl = Astro.site ?? new URL("https://matthewgtran.com");
 ---
-<BaseLayout title="About" description={`About ${site.name} - game developer and USC graduate.`}>
+<BaseLayout
+  title="About"
+  description={`About ${site.name} - game developer and USC graduate.`}
+  jsonLd={personJsonLd(siteUrl)}
+>
   <section class="section container">
     <h1 class="section-title">About</h1>
 

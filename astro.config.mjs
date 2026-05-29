@@ -10,6 +10,14 @@ export default defineConfig({
   site,
   base,
   output: "static",
+  image: {
+    service: {
+      config: {
+        webp: { effort: 4 },
+        avif: { effort: 4 },
+      },
+    },
+  },
   markdown: {
     rehypePlugins: [[rehypeBaseUrls, { base }]],
   },

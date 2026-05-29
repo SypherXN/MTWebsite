@@ -3,9 +3,20 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { withBase } from "../utils/base";
 ---
 <BaseLayout title="Page not found" noindex>
-  <section class="section container" style="text-align:center">
+  <section class="section container not-found">
     <h1 class="section-title">404</h1>
     <p>That page does not exist.</p>
-    <p><a class="btn btn-primary" href={withBase("/")}>Home</a> <a class="btn btn-ghost" href={withBase("/projects/")}>Projects</a></p>
+    <div class="not-found-actions">
+      <a class="btn btn-primary" href={withBase("/")}>Home</a>
+      <a class="btn btn-ghost" href={withBase("/projects/")}>Projects</a>
+      <button type="button" class="btn btn-ghost" id="not-found-search" data-ga-cta="404_search">
+        Search site
+      </button>
+    </div>
   </section>
 </BaseLayout>
+<script>
+  document.getElementById("not-found-search")?.addEventListener("click", () => {
+    window.dispatchEvent(new CustomEvent("mt-search-open"));
+  });
+</script>

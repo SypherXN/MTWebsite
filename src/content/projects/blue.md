@@ -26,15 +26,11 @@ links:
 
 ## Gallery
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/blue/in-game.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/blue/in-game.png" alt="B.L.U.E. in-game view" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/blue/in-game.png" alt="B.L.U.E. in-game view" loading="lazy" />
 </figure>
 <p><em>In-game view</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/blue/cinematic.jpeg')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/blue/cinematic.jpeg" alt="B.L.U.E. cinematic view" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/blue/cinematic.jpeg" alt="B.L.U.E. cinematic view" loading="lazy" />
 </figure>
 <p><em>Cinematic view</em></p>
 
@@ -42,8 +38,6 @@ links:
 
 The project follows USC AGP production milestones with ongoing playtesting, QA passes, and cross-discipline coordination as core systems for ship building and combat are implemented and refined.
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/blue/team-group.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/blue/team-group.png" alt="B.L.U.E. team group photo outdoors" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/blue/team-group.png" alt="B.L.U.E. team group photo outdoors" loading="lazy" />
 </figure>
 <p><em>Team group photo</em></p>

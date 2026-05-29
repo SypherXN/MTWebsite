@@ -4,11 +4,13 @@ import ProjectCard from "../components/ProjectCard.astro";
 import site from "../data/site.json";
 import { getSortedProjects } from "../utils/projects";
 import { withBase } from "../utils/base";
+import { personJsonLd, webSiteJsonLd } from "../utils/jsonld";
 
 const projects = await getSortedProjects();
 const featured = projects.filter((p) => p.data.featured).slice(0, 3);
+const siteUrl = Astro.site ?? new URL("https://matthewgtran.com");
 ---
-<BaseLayout description={site.description} image={site.image}>
+<BaseLayout description={site.description} image={site.image} jsonLd={[personJsonLd(siteUrl), webSiteJsonLd(siteUrl)]}>
   <section class="hero container">
     <div class="hero-photo-frame">
       <img

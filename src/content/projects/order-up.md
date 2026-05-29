@@ -21,27 +21,19 @@ platform: "Tabletop"
 
 ## Gallery
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/order-up/rules-sheet.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/order-up/rules-sheet.png" alt="Order Up rules sheet" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/order-up/rules-sheet.png" alt="Order Up rules sheet" loading="lazy" />
 </figure>
 <p><em>Order Up! rules</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/order-up/index-cards.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/order-up/index-cards.png" alt="First iteration index cards" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/order-up/index-cards.png" alt="First iteration index cards" loading="lazy" />
 </figure>
 <p><em>First iteration using index cards</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/order-up/card-designs.jpeg')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/order-up/card-designs.jpeg" alt="Updated card designs" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/order-up/card-designs.jpeg" alt="Updated card designs" loading="lazy" />
 </figure>
 <p><em>Updated Canva card designs</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/order-up/final-playtest.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/order-up/final-playtest.png" alt="Final in-class playtest" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/order-up/final-playtest.png" alt="Final in-class playtest" loading="lazy" />
 </figure>
 <p><em>Final in-class playtest</em></p>
 

@@ -1,0 +1,44 @@
+---
+import { withBase } from "../utils/base";
+
+const ga4Enabled = import.meta.env.PUBLIC_GA4_ENABLED === "true";
+const ga4Id = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
+---
+{ga4Enabled && ga4Id && (
+  <div
+    id="consent-banner"
+    class="consent-banner"
+    role="dialog"
+    aria-labelledby="consent-banner-title"
+    aria-describedby="consent-banner-desc"
+    aria-hidden="true"
+    hidden
+  >
+    <div class="consent-banner-inner container">
+      <p id="consent-banner-title" class="consent-banner-title">Analytics cookies</p>
+      <p id="consent-banner-desc" class="consent-banner-desc">
+        This site uses Google Analytics to understand traffic. You can accept or decline analytics
+        storage for this browser.
+      </p>
+      <div class="consent-banner-actions">
+        <button type="button" class="btn btn-ghost" id="consent-reject" data-ga-cta="consent_reject">
+          Decline
+        </button>
+        <button type="button" class="btn btn-primary" id="consent-accept" data-ga-cta="consent_accept">
+          Accept
+        </button>
+      </div>
+    </div>
+  </div>
+  <script
+    is:inline
+    define:vars={{
+      ga4Id,
+      ga4EventsScript: withBase("/scripts/ga4-events.js"),
+    }}
+  >
+    window.__MT_GA4_ID__ = ga4Id;
+    window.__MT_GA4_EVENTS_SCRIPT__ = ga4EventsScript;
+  </script>
+  <script defer src={withBase("/scripts/analytics-consent.js")} />
+)}

@@ -1,3 +1,11 @@
+/** Returns the 11-character video id from common YouTube URL shapes. */
+export function toYouTubeVideoId(input: string): string | null {
+  const embed = toYouTubeEmbedUrl(input);
+  if (!embed) return null;
+  const match = embed.match(/\/embed\/([^/?]+)/);
+  return match?.[1] ?? null;
+}
+
 /** Accepts watch, embed, shorts, or youtu.be URLs; returns embed URL or null. */
 export function toYouTubeEmbedUrl(input: string): string | null {
   const raw = input.trim();

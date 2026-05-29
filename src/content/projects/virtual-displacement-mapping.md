@@ -20,21 +20,15 @@ platform: "PC (Unity)"
 
 ## Gallery
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/virtual-displacement-mapping/report-pages/page-02.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/virtual-displacement-mapping/report-pages/page-02.png" alt="VDMT report excerpt with mapping comparison figures" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/virtual-displacement-mapping/report-pages/page-02.png" alt="VDMT report excerpt with mapping comparison figures" loading="lazy" />
 </figure>
 <p><em>Report visual comparison across mapping methods (excerpt)</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/virtual-displacement-mapping/report-pages/page-03.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/virtual-displacement-mapping/report-pages/page-03.png" alt="VDMT report excerpt showing oblique-angle comparisons" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/virtual-displacement-mapping/report-pages/page-03.png" alt="VDMT report excerpt showing oblique-angle comparisons" loading="lazy" />
 </figure>
 <p><em>Oblique-angle comparison and method discussion (excerpt)</em></p>
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/virtual-displacement-mapping/report-pages/page-04.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/virtual-displacement-mapping/report-pages/page-04.png" alt="VDMT report excerpt with performance table and summary" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/virtual-displacement-mapping/report-pages/page-04.png" alt="VDMT report excerpt with performance table and summary" loading="lazy" />
 </figure>
 <p><em>Performance table and summary conclusions (excerpt)</em></p>
 

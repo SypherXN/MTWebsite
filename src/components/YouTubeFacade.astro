@@ -1,0 +1,58 @@
+---
+import { toYouTubeEmbedUrl, toYouTubeVideoId } from "../utils/youtube";
+
+interface Props {
+  url: string;
+  title: string;
+}
+
+const { url, title } = Astro.props;
+const videoId = toYouTubeVideoId(url);
+const embedUrl = toYouTubeEmbedUrl(url);
+const thumbnail = videoId ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg` : null;
+---
+{embedUrl && thumbnail ? (
+  <div class="case-hero-video youtube-facade" data-youtube-embed={embedUrl}>
+    <button type="button" class="youtube-facade-play" aria-label={`Play video: ${title}`}>
+      <img
+        class="youtube-facade-thumb"
+        src={thumbnail}
+        alt=""
+        width="1280"
+        height="720"
+        loading="lazy"
+        decoding="async"
+      />
+      <span class="youtube-facade-icon" aria-hidden="true">
+        <svg viewBox="0 0 68 48" width="68" height="48" focusable="false">
+          <path
+            d="M66.52 7.74a8.28 8.28 0 0 0-5.82-5.85C55.3 1 34 1 34 1S12.7 1 7.3 1.89a8.28 8.28 0 0 0-5.82 5.85A86.27 86.27 0 0 0 0 24a86.27 86.27 0 0 0 1.48 16.26 8.28 8.28 0 0 0 5.82 5.85C12.7 47 34 47 34 47s21.3 0 26.7-1.89a8.28 8.28 0 0 0 5.82-5.85A86.27 86.27 0 0 0 68 24a86.27 86.27 0 0 0-1.48-16.26z"
+            fill="#f00"
+          />
+          <path d="M45 24 27 14v20" fill="#fff" />
+        </svg>
+      </span>
+    </button>
+  </div>
+) : null}
+<script>
+  document.querySelectorAll(".youtube-facade").forEach((wrapper) => {
+    const embed = wrapper.getAttribute("data-youtube-embed");
+    const play = wrapper.querySelector(".youtube-facade-play");
+    if (!embed || !(play instanceof HTMLButtonElement)) return;
+
+    play.addEventListener("click", () => {
+      const iframe = document.createElement("iframe");
+      iframe.src = `${embed}?autoplay=1`;
+      iframe.title = play.getAttribute("aria-label") ?? "Project video";
+      iframe.setAttribute(
+        "allow",
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+      );
+      iframe.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+      iframe.setAttribute("allowfullscreen", "");
+      wrapper.replaceChildren(iframe);
+      wrapper.classList.add("youtube-facade--playing");
+    });
+  });
+</script>

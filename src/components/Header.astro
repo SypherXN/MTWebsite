@@ -31,7 +31,7 @@ const isActive = (linkPath: string) =>
       ))}
     </nav>
     <div class="header-actions">
-      <button type="button" class="icon-btn" id="search-open" aria-label="Search projects" data-ga-cta="search_open">
+      <button type="button" class="icon-btn" id="search-open" aria-label="Search site" data-ga-cta="search_open">
         <SearchIcon />
       </button>
       <button
@@ -60,10 +60,20 @@ const isActive = (linkPath: string) =>
   const nav = document.getElementById("site-nav");
   const navToggle = document.getElementById("nav-toggle");
 
+  const closeNav = () => {
+    nav?.classList.remove("open");
+    navToggle?.setAttribute("aria-expanded", "false");
+    navToggle?.setAttribute("aria-label", "Open navigation menu");
+  };
+
   navToggle?.addEventListener("click", () => {
     const open = nav?.classList.toggle("open");
     navToggle.setAttribute("aria-expanded", open ? "true" : "false");
     navToggle.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+  });
+
+  nav?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeNav);
   });
 
   const themeToggle = document.getElementById("theme-toggle");
@@ -82,10 +92,6 @@ const isActive = (linkPath: string) =>
   updateThemeLabel();
 
   document.getElementById("search-open")?.addEventListener("click", () => {
-    document.getElementById("search-modal")?.classList.add("open");
-    window.setTimeout(() => {
-      const input = document.querySelector("#pagefind-search .pagefind-ui__search-input");
-      if (input instanceof HTMLInputElement) input.focus();
-    }, 50);
+    window.dispatchEvent(new CustomEvent("mt-search-open"));
   });
 </script>

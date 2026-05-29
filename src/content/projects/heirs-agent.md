@@ -26,9 +26,7 @@ links:
 
 ## Gallery
 
-<figure class="media-frame" style="--frame-bg: url('/images/projects/heirs-agent/cover.png')">
-  <div class="media-frame-bg" aria-hidden="true"></div>
-  <img src="/images/projects/heirs-agent/cover.png" alt="Heirs board game pieces and setup" loading="lazy" />
+<figure class="media-frame"><img src="/images/projects/heirs-agent/cover.png" alt="Heirs board game pieces and setup" loading="lazy" />
 </figure>
 <p><em>Heirs — strategic board game of youthful royalty (assignment overview)</em></p>
 
