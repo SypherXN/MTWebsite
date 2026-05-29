@@ -28,6 +28,7 @@ const projects = defineCollection({
         demoLabel: z.string().optional(),
         repo: z.string().url().optional(),
         store: z.string().url().optional(),
+        discord: z.string().url().optional(),
       })
       .optional(),
   }),

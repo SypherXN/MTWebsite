@@ -6,13 +6,13 @@ interface Props {
   genre?: string;
   platform?: string;
   tools?: string[];
-  links?: { demo?: string; demoLabel?: string; repo?: string; store?: string };
+  links?: { demo?: string; demoLabel?: string; repo?: string; store?: string; discord?: string };
 }
 
 const { category, role, dates, genre, platform, tools = [], links } = Astro.props;
 const showGenre = genre && category !== "Computer Science";
 const hasMeta = role || dates || showGenre || platform;
-const hasLinks = links?.demo || links?.repo || links?.store;
+const hasLinks = links?.demo || links?.repo || links?.store || links?.discord;
 
 function demoLinkLabel(url: string, customLabel?: string): string {
   if (customLabel) return customLabel;
@@ -58,7 +58,13 @@ function storeLinkLabel(url: string): string {
             <strong>{storeLinkLabel(links.store)}</strong>
           </a>
         )}
-        {links?.store && (links?.demo || links?.repo) && " · "}
+        {links?.store && (links?.discord || links?.demo || links?.repo) && " · "}
+        {links?.discord && (
+          <a href={links.discord} rel="noopener noreferrer" target="_blank">
+            <strong>Discord</strong>
+          </a>
+        )}
+        {links?.discord && (links?.demo || links?.repo) && " · "}
         {links?.demo && (
           <a href={links.demo} rel="noopener noreferrer" target="_blank">
             <strong>{demoLinkLabel(links.demo, links.demoLabel)}</strong>

@@ -26,6 +26,7 @@
       if (host.includes("github.com")) return "github";
       if (host.includes("youtube.com") || host === "youtu.be") return "youtube";
       if (host.includes("linkedin.com")) return "linkedin";
+      if (host.includes("discord.com") || host.includes("discord.gg")) return "discord";
       if (host.includes("capstone.engineering.ucsb.edu")) return "capstone";
       if (host.includes("drive.google.com")) return "google_drive";
       return host;

@@ -14,6 +14,7 @@ platform: "Meta Quest 3"
 youtube: "https://www.youtube.com/watch?v=pCl-uN2TTYY"
 links:
   store: https://www.meta.com/experiences/fly-exterminator/26967497566216109/
+  discord: https://discord.gg/9hhGvvrBD2
 ---
 
 ## Duties
