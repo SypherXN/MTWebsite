@@ -2,6 +2,7 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import { rehypeBaseUrls } from "./scripts/rehype-base-urls.mjs";
+import { rehypeMediaFrameBg } from "./scripts/rehype-media-frame-bg.mjs";
 
 const site = process.env.ASTRO_SITE ?? "https://matthewgtran.com";
 const base = process.env.ASTRO_BASE ?? "/";
@@ -19,7 +20,7 @@ export default defineConfig({
     },
   },
   markdown: {
-    rehypePlugins: [[rehypeBaseUrls, { base }]],
+    rehypePlugins: [rehypeMediaFrameBg, [rehypeBaseUrls, { base }]],
   },
   integrations: [
     sitemap({

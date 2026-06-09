@@ -9,7 +9,7 @@ interface Props {
 const { url, title } = Astro.props;
 const videoId = toYouTubeVideoId(url);
 const embedUrl = toYouTubeEmbedUrl(url);
-const thumbnail = videoId ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg` : null;
+const thumbnail = videoId ? `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg` : null;
 ---
 {embedUrl && thumbnail ? (
   <div class="case-hero-video youtube-facade" data-youtube-embed={embedUrl}>
@@ -22,6 +22,7 @@ const thumbnail = videoId ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg` : 
         height="720"
         loading="lazy"
         decoding="async"
+        onerror={`if (this.src.includes('maxresdefault')) this.src = 'https://i.ytimg.com/vi/${videoId}/hqdefault.jpg'`}
       />
       <span class="youtube-facade-icon" aria-hidden="true">
         <svg viewBox="0 0 68 48" width="68" height="48" focusable="false">

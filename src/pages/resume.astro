@@ -5,7 +5,7 @@ import { withBase } from "../utils/base";
 const resumePdf = withBase("/resume.pdf");
 ---
 <BaseLayout title="Resume" description="Resume — Matthew Tran">
-  <section class="section container resume-page">
+  <section class="section container">
     <h1 class="section-title">Resume</h1>
     <p>
       <a class="btn btn-primary" href={resumePdf} download data-ga-event="resume_download">
@@ -14,7 +14,7 @@ const resumePdf = withBase("/resume.pdf");
     </p>
     <div class="resume-viewer">
       <iframe
-        src={`${resumePdf}#toolbar=0&view=FitH`}
+        src={`${resumePdf}#toolbar=0&navpanes=0&scrollbar=1&view=FitV`}
         title="Resume PDF"
         width="100%"
         loading="lazy"

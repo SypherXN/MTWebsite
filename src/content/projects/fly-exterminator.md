@@ -13,6 +13,8 @@ genre: "Mixed Reality, Simulation, Competitive"
 platform: "Meta Quest 3"
 youtube: "https://www.youtube.com/watch?v=pCl-uN2TTYY"
 links:
+  demo: https://boundaryinteractive.com
+  demoLabel: Studio website
   store: https://www.meta.com/experiences/fly-exterminator/26967497566216109/
   discord: https://discord.gg/9hhGvvrBD2
 ---
