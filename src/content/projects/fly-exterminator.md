@@ -7,8 +7,8 @@ role: "Game Designer and Developer"
 dates: "January 2025 – Current"
 startDate: "2024-08-01"
 image: "/images/projects/fly-exterminator/cover.png"
-summary: "Mixed-reality game for Meta Quest 3 where players chase and catch virtual flies in your real room—Early Access on Meta Store targeting early July 2026"
-overview: "Fly Exterminator is a mixed-reality game for Meta Quest 3 from [Boundary Interactive LLC](https://boundaryinteractive.com), a studio I co-founded. Players chase and catch virtual flies in their real room using Quest scene capture, with quick reflex gameplay, satisfying interactions, and MR mechanics built for standalone VR. The title is targeting Early Access on Meta Store in early July 2026."
+summary: "Mixed-reality game for Meta Quest 3 where players chase and catch virtual flies in your real room—Early Access on Meta Store targeting July 31, 2026"
+overview: "Fly Exterminator is a mixed-reality game for Meta Quest 3 from [Boundary Interactive LLC](https://boundaryinteractive.com), a studio I co-founded. Players chase and catch virtual flies in their real room using Quest scene capture, with quick reflex gameplay, satisfying interactions, and MR mechanics built for standalone VR. The title is targeting Early Access on Meta Store on July 31, 2026."
 genre: "Mixed Reality, Simulation, Competitive"
 platform: "Meta Quest 3"
 youtube: "https://www.youtube.com/watch?v=pCl-uN2TTYY"
@@ -21,7 +21,7 @@ links:
 
 ## Duties
 
-- Co-founded Boundary Interactive LLC and led co-development of Fly Exterminator, a mixed-reality title for Meta Quest 3 targeting Early Access on Meta Store in early July 2026 — [boundaryinteractive.com](https://boundaryinteractive.com)
+- Co-founded Boundary Interactive LLC and led co-development of Fly Exterminator, a mixed-reality title for Meta Quest 3 targeting Early Access on Meta Store on July 31, 2026 — [boundaryinteractive.com](https://boundaryinteractive.com)
 - Owned game design and development across core gameplay loops, MR interactions, and player-facing UI for short-session play
 - Implemented room-scale MR using Quest scene capture so virtual flies integrate naturally with players' real environments
 - Collaborated in a two-person development team, using Perforce for version control, integration, and milestone delivery
@@ -62,4 +62,4 @@ Pre-production focused on a vertical slice: main menu, two game modes, and a res
 
 Production expanded core mechanics with playtest feedback through Alpha (feature completeness: killing flies, UI, metrics) and Beta (all modes and tutorials). See the [alpha demo](https://www.youtube.com/watch?v=Dw75sX5Mkr8) and [beta demo](https://www.youtube.com/watch?v=KNtHEwWo9Gk).
 
-Post-production emphasized polish: UI redesigns plus music, SFX, and VFX, culminating in the teaser shown in the hero video. The game is targeting Early Access on Meta Store in early July 2026 — see [Boundary Interactive](https://boundaryinteractive.com) for updates.
+Post-production emphasized polish: UI redesigns plus music, SFX, and VFX, culminating in the teaser shown in the hero video. The game is targeting Early Access on Meta Store on July 31, 2026 — see [Boundary Interactive](https://boundaryinteractive.com) for updates.
