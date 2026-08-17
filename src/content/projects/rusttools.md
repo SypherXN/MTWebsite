@@ -24,6 +24,20 @@ links:
 - Wired raid, TC decay, world-event, and storage alerts to Discord, team chat, web push, and optional SMS/email escalation
 - Set up operational tooling: Docker/Caddy production layout, GitHub Pages UI, CI, health/backup scripts, and documented clone-and-deploy
 
+## Gallery
+
+<figure class="media-frame"><img src="/images/projects/rusttools/dashboard.png" alt="RustTools dashboard with server status, team, and world events" loading="lazy" />
+</figure>
+<p><em>Dashboard — connection status, population, wipe timer, and world events</em></p>
+
+<figure class="media-frame"><img src="/images/projects/rusttools/devices.png" alt="RustTools devices page with smart switch On/Off controls" loading="lazy" />
+</figure>
+<p><em>Devices — paired smart switches with live ON/OFF state and explicit controls</em></p>
+
+<figure class="media-frame"><img src="/images/projects/rusttools/map.png" alt="RustTools 2D map with team positions, monuments, and layer controls" loading="lazy" />
+</figure>
+<p><em>Map — live team positions, vending, monuments, and overlay layers</em></p>
+
 ## Process
 
 The project started from a practical need: keep smart devices, map awareness, and raid alerts in one place my team already uses (Discord and a browser), without leaving a game client open on a dedicated machine.

@@ -24,6 +24,20 @@ links:
 - Wired SSE dashboard streaming, hashed device credentials, and role separation (`agent`, `kiosk`, `admin`)
 - Set up deploy paths for OCI, Linux systemd, Windows, and Android kiosk, plus `make build` / `make test` / cross-compile release targets
 
+## Gallery
+
+<figure class="media-frame"><img src="/images/projects/infohub/overview.png" alt="InfoHub tablet overview with weather, commute, and host tiles" loading="lazy" />
+</figure>
+<p><em>Overview — weather, commute, and host health on the Lenovo Tab One PWA</em></p>
+
+<figure class="media-frame"><img src="/images/projects/infohub/system.png" alt="InfoHub system page with CPU, RAM, temperature, and 24-hour charts" loading="lazy" />
+</figure>
+<p><em>System — host telemetry, expiry warnings, and 24-hour charts</em></p>
+
+<figure class="media-frame"><img src="/images/projects/infohub/homebot.png" alt="InfoHub HomeBot module snapshot on a host" loading="lazy" />
+</figure>
+<p><em>HomeBot module — household snapshot from local SQLite on the same host</em></p>
+
 ## Process
 
 The project started from a practical need: see household apps, game servers, and the machines that run them at a glance on a wall tablet, without opening a dozen dashboards or putting API keys for every service on the kiosk.
